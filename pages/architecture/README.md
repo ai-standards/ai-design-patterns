@@ -22,6 +22,9 @@ Run risky or untrusted actions in isolation before touching production. Dry-runs
 ### [Fallback Chain](./fallback-chain.md)  
 Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results.  
 
+### [Agentic Redux](./draft-agentic-redux.md)  
+Apply Redux-style discipline to AI systems. Agents propose state updates, reducers validate and apply them, and the canonical store remains compact, deterministic, and auditable. This keeps global state lean while allowing agents to explore safely.  
+
 ---
 
 ## Why Architecture Matters
