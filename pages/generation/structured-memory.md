@@ -48,4 +48,59 @@ The **Structured Memory** pattern addresses this by treating memory as tiers. Sh
 
 **Cons**  
 - Requires infrastructure for storage and retrieval.  
-- Summarization may lose detail.  
+- Summarization may lose detail.
+
+---
+
+## Example
+
+See the [complete TypeScript implementation](../../examples/structured-memory/) for a working example.
+
+```typescript
+import { MemoryManager } from './memory-manager.js';
+
+const memory = new MemoryManager({
+  shortTermMaxEntries: 10,       // Keep recent context lean
+  shortTermMaxTokens: 2000,      // Control prompt size
+  longTermRetentionThreshold: 6, // Important memories persist
+  summarizationThreshold: 5      // When to summarize old content
+});
+
+// Add memories with importance scores - high importance persists
+memory.addMemory(
+  "User wants to build a React app with TypeScript", 
+  'conversation', 
+  8  // High importance - will move to long-term storage
+);
+
+memory.addMemory(
+  "React 18 introduced concurrent features", 
+  'fact', 
+  7
+);
+
+memory.addMemory(
+  "The weather is nice today", 
+  'conversation', 
+  2  // Low importance - will be discarded when memory fills
+);
+
+// Retrieve only relevant memories for current context
+const relevant = memory.retrieveRelevant({
+  keywords: ['react', 'typescript'],
+  categories: ['conversation', 'fact'],
+  minImportance: 6,
+  limit: 5
+});
+
+// Build focused context prompt within token limits
+const contextPrompt = memory.buildContextPrompt({
+  keywords: ['react', 'app'],
+  minImportance: 7
+}, 1500);  // Stay within 1500 token limit
+
+console.log('Focused context:', contextPrompt);
+// Output: Only relevant, high-importance memories within token budget
+```
+
+Key insight: Instead of cramming everything into every prompt (expensive and confusing), manage memory in structured tiers. Keep short-term memory lean, move important information to searchable long-term storage, and retrieve only what's relevant for each specific context.  

@@ -68,8 +68,10 @@ See [CONTRIBUTING.md](./pages/appendices/contribution-guide.md) for guidelines.
 
 ## License
 
-This catalog is open source under the MIT License.  
-It is intended to be freely shared, remixed, and built upon by the AI community.  
+This catalog is released under Creative Commons Attribution 4.0 International (CC BY 4.0).  
+You are free to share, adapt, and build upon this work for any purpose, even commercially, as long as you provide attribution.
+
+See [license.md](./license.md) for full details.  
 
 ---
 
