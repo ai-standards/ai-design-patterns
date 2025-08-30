@@ -38,8 +38,8 @@ function buildIndex() {
   const sections = new Map();
   const tagCounts = new Map();
 
-  // Get all pattern.yml files
-  const patternFiles = glob.sync('patterns/*/pattern.yml');
+  // Get all pattern.yml files (from project root)
+  const patternFiles = glob.sync('../patterns/*/pattern.yml');
   console.log(`Found ${patternFiles.length} pattern files`);
 
   for (const filePath of patternFiles) {
@@ -115,7 +115,7 @@ function buildIndex() {
     }
   };
 
-  // Write index.json
+  // Write index.json to project root
   const indexPath = path.join(__dirname, '..', 'index.json');
   fs.writeFileSync(indexPath, JSON.stringify(index, null, 2));
   
