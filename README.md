@@ -62,7 +62,7 @@ This is a living standard. We welcome contributions:
 - Suggest anti-patterns to warn others.  
 - Share field notes from applying these patterns in practice.  
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.  
+See [CONTRIBUTING.md](./pages/appendices/contribution-guide.md) for guidelines.  
 
 ---
 
