@@ -48,4 +48,34 @@ The **Context Ledger** pattern ensures every input is logged and auditable. Prom
 
 **Cons**  
 - Requires storage and discipline.  
-- May expose sensitive data if not secured properly.  
+- May expose sensitive data if not secured properly.
+
+---
+
+## Example
+
+See the [complete TypeScript implementation](../../examples/context-ledger/) for a working example.
+
+```typescript
+import { ContextLedger } from './ledger.js';
+import { AIGenerator } from './generator.js';
+
+const ledger = new ContextLedger();
+const generator = new AIGenerator(ledger);
+
+// Context is automatically logged before generation
+const result = await generator.generateWithLedger(
+  'session-123',
+  'What is the capital of France?',
+  'You are a helpful geography assistant.'
+);
+
+// Both context and generation are now in the ledger
+console.log('Result:', result.output);
+
+// Later: reproduce the exact context that led to this result
+const reproduced = ledger.reproduceContext(result.contextEntry.id);
+console.log('Original prompt:', reproduced?.prompt);
+```
+
+Key insight: Instead of calling AI directly, wrap every generation with context logging. This makes failures debuggable and successes repeatable.  
