@@ -1,312 +1,480 @@
 {
   "patterns": [
     {
-      "id": "deterministic-io",
+      "id": "0001-deterministic-io",
       "title": "Deterministic IO",
       "section": "generation",
       "description": "Schema-first prompting. Define contracts for every output so results are testable, reproducible, and debuggable.",
       "hasExample": true,
-      "path": "patterns/0001-deterministic-io/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["generation", "schemas", "validation", "reliability", "typescript", "zod"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "generation",
+        "schemas",
+        "validation",
+        "reliability",
+        "typescript",
+        "zod"
+      ]
     },
     {
-      "id": "context-ledger",
-      "title": "Context Ledger", 
+      "id": "0002-context-ledger",
+      "title": "Context Ledger",
       "section": "generation",
       "description": "Make prompt assembly explicit and auditable. Log what went in and what came out so every generation can be replayed.",
       "hasExample": true,
-      "path": "patterns/0002-context-ledger/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["generation", "debugging", "audit-trail", "reproducibility", "logging", "transparency"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "generation",
+        "debugging",
+        "audit-trail",
+        "reproducibility",
+        "logging",
+        "transparency"
+      ]
     },
     {
-      "id": "structured-memory",
+      "id": "0003-structured-memory",
       "title": "Structured Memory",
-      "section": "generation", 
+      "section": "generation",
       "description": "Separate short-term context from long-term knowledge. Prevent prompt bloat and improve reliability by treating memory as tiers.",
       "hasExample": true,
-      "path": "patterns/0003-structured-memory/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["generation", "memory-management", "context-optimization", "performance", "scalability", "retrieval"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "generation",
+        "memory-management",
+        "context-optimization",
+        "performance",
+        "scalability",
+        "retrieval"
+      ]
     },
     {
-      "id": "streaming-first",
+      "id": "0004-streaming-first",
       "title": "Streaming First",
       "section": "generation",
       "description": "Prefer incremental output over monoliths. Improves UX, reduces perceived latency, and creates more responsive systems.",
       "hasExample": true,
-      "path": "patterns/0004-streaming-first/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["generation", "user-experience", "performance", "streaming", "responsiveness", "async-generators"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "generation",
+        "user-experience",
+        "performance",
+        "streaming",
+        "responsiveness",
+        "async-generators"
+      ]
     },
     {
-      "id": "pathscore",
+      "id": "0005-pathscore",
       "title": "PathScore",
       "section": "generation",
       "description": "A single-number evaluation metric for comparing paths before merging. Balances value (impact) against cost (tokens, time, eval bill).",
       "hasExample": true,
-      "path": "patterns/0005-pathscore/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["generation", "evaluation", "decision-making", "metrics", "deployment", "cost-optimization"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "generation",
+        "evaluation",
+        "decision-making",
+        "metrics",
+        "deployment",
+        "cost-optimization"
+      ]
     },
     {
-      "id": "track-path-governance",
+      "id": "0006-track-path-governance",
       "title": "Track–Path Governance",
       "section": "governance",
       "description": "Replace personality-driven debates with structured exploration. Work is organized into tracks (shared goals) and paths (alternative approaches). Evidence determines which path merges back, not ego.",
       "hasExample": false,
-      "path": "patterns/0006-track-path-governance/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["governance", "team-dynamics", "decision-making", "collaboration", "evidence-based", "process"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "governance",
+        "team-dynamics",
+        "decision-making",
+        "collaboration",
+        "evidence-based",
+        "process"
+      ]
     },
     {
-      "id": "eval-as-contract",
+      "id": "0007-eval-as-contract",
       "title": "Eval as Contract",
       "section": "governance",
       "description": "Define evaluation criteria up front so merges are based on evidence, not persuasion. Metrics agreed before work begins prevent shifting goalposts.",
       "hasExample": false,
-      "path": "patterns/0007-eval-as-contract/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["governance", "evaluation", "contracts", "metrics", "accountability", "transparency"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "governance",
+        "evaluation",
+        "contracts",
+        "metrics",
+        "accountability",
+        "transparency"
+      ]
     },
     {
-      "id": "decision-ledger",
+      "id": "0008-decision-ledger",
       "title": "Decision Ledger",
       "section": "governance",
       "description": "Preserve the rationale behind decisions so they aren't forgotten or relitigated. A simple log of decisions, dates, and rationale saves teams from repeating old debates.",
       "hasExample": true,
-      "path": "patterns/0008-decision-ledger/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["governance", "decision-making", "institutional-memory", "documentation", "knowledge-management", "typescript"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "governance",
+        "decision-making",
+        "institutional-memory",
+        "documentation",
+        "knowledge-management",
+        "typescript"
+      ]
     },
     {
-      "id": "lazy-consensus",
+      "id": "0009-lazy-consensus",
       "title": "Lazy Consensus",
       "section": "governance",
       "description": "Default to progress unless there is strong, constructive objection. Silence means consent; objections must come with a counter-path.",
       "hasExample": false,
-      "path": "patterns/0009-lazy-consensus/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["governance", "consensus", "decision-making", "progress", "team-dynamics", "velocity"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "governance",
+        "consensus",
+        "decision-making",
+        "progress",
+        "team-dynamics",
+        "velocity"
+      ]
     },
     {
-      "id": "acv",
+      "id": "0010-acv",
       "title": "ACV (Agent / Controller / View)",
       "section": "architecture",
       "description": "Separate reasoning, orchestration, and presentation to avoid brittle, tangled systems. Agents propose, controllers execute, views render.",
       "hasExample": false,
-      "path": "patterns/0010-acv/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["architecture", "separation-of-concerns", "mvc-pattern", "agents", "orchestration", "modularity"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "architecture",
+        "separation-of-concerns",
+        "mvc-pattern",
+        "agents",
+        "orchestration",
+        "modularity"
+      ]
     },
     {
-      "id": "tool-adapter",
+      "id": "0011-tool-adapter",
       "title": "Tool Adapter",
       "section": "architecture",
       "description": "Wrap volatile or risky tools in strict contracts. Adapters validate, retry, and log so agents only see safe, stable interfaces.",
       "hasExample": false,
-      "path": "patterns/0011-tool-adapter/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["architecture", "adapter-pattern", "safety", "contracts", "error-handling", "reliability"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "architecture",
+        "adapter-pattern",
+        "safety",
+        "contracts",
+        "error-handling",
+        "reliability"
+      ]
     },
     {
-      "id": "sandbox-first",
+      "id": "0012-sandbox-first",
       "title": "Sandbox-First",
       "section": "architecture",
       "description": "Run risky or untrusted actions in isolation before touching production. Dry-runs and mocks protect systems from catastrophic errors.",
       "hasExample": false,
-      "path": "patterns/0012-sandbox-first/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["architecture", "safety", "isolation", "testing", "risk-management", "sandbox"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "architecture",
+        "safety",
+        "isolation",
+        "testing",
+        "risk-management",
+        "sandbox"
+      ]
     },
     {
-      "id": "fallback-chain",
+      "id": "0013-fallback-chain",
       "title": "Fallback Chain",
       "section": "architecture",
       "description": "Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results.",
       "hasExample": false,
-      "path": "patterns/0013-fallback-chain/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["architecture", "resilience", "error-handling", "fallbacks", "reliability", "chain-of-responsibility"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "architecture",
+        "resilience",
+        "error-handling",
+        "fallbacks",
+        "reliability",
+        "chain-of-responsibility"
+      ]
     },
     {
-      "id": "agentic-redux",
+      "id": "0014-agentic-redux",
       "title": "Agentic Redux",
       "section": "architecture",
       "description": "Apply Redux-style discipline to AI systems. Agents propose state updates, reducers validate and apply them, and the canonical store remains compact, deterministic, and auditable.",
       "hasExample": false,
-      "path": "patterns/0014-agentic-redux/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["architecture", "state-management", "redux-pattern", "agents", "deterministic", "auditability"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "architecture",
+        "state-management",
+        "redux-pattern",
+        "agents",
+        "deterministic",
+        "auditability"
+      ]
     },
     {
-      "id": "rollback-ledger",
+      "id": "0015-rollback-ledger",
       "title": "Rollback Ledger",
       "section": "operational",
       "description": "Make every launch reversible. Nothing enters production unless it can also be rolled back cleanly.",
       "hasExample": false,
-      "path": "patterns/0015-rollback-ledger/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["operational", "deployment", "rollback", "safety", "production", "reversibility"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "operational",
+        "deployment",
+        "rollback",
+        "safety",
+        "production",
+        "reversibility"
+      ]
     },
     {
-      "id": "canary-tokens",
+      "id": "0016-canary-tokens",
       "title": "Canary Tokens",
       "section": "operational",
       "description": "Roll out changes gradually by allocating small slices of traffic or token budgets before scaling system-wide.",
       "hasExample": false,
-      "path": "patterns/0016-canary-tokens/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["operational", "deployment", "canary-releases", "gradual-rollout", "risk-mitigation", "monitoring"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "operational",
+        "deployment",
+        "canary-releases",
+        "gradual-rollout",
+        "risk-mitigation",
+        "monitoring"
+      ]
     },
     {
-      "id": "shadow-agents",
+      "id": "0017-shadow-agents",
       "title": "Shadow Agents",
       "section": "operational",
       "description": "Test new agents in parallel with production by logging their results invisibly until they are proven.",
       "hasExample": false,
-      "path": "patterns/0017-shadow-agents/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["operational", "testing", "parallel-execution", "validation", "production-testing", "shadow-mode"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "operational",
+        "testing",
+        "parallel-execution",
+        "validation",
+        "production-testing",
+        "shadow-mode"
+      ]
     },
     {
-      "id": "cost-guardrails",
+      "id": "0018-cost-guardrails",
       "title": "Cost Guardrails",
       "section": "operational",
       "description": "Prevent runaway token or compute costs by enforcing explicit budgets and thresholds at every layer.",
       "hasExample": false,
-      "path": "patterns/0018-cost-guardrails/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["operational", "cost-management", "budgets", "guardrails", "monitoring", "thresholds"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "operational",
+        "cost-management",
+        "budgets",
+        "guardrails",
+        "monitoring",
+        "thresholds"
+      ]
     },
     {
-      "id": "telemetry-ledger",
+      "id": "0019-telemetry-ledger",
       "title": "Telemetry Ledger",
       "section": "operational",
       "description": "Record all inputs, outputs, and metadata so behavior can be debugged, audited, and reproduced.",
       "hasExample": false,
-      "path": "patterns/0019-telemetry-ledger/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["operational", "telemetry", "observability", "debugging", "audit-trail", "monitoring"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "operational",
+        "telemetry",
+        "observability",
+        "debugging",
+        "audit-trail",
+        "monitoring"
+      ]
     },
     {
-      "id": "autonomy-levels",
+      "id": "0020-autonomy-levels",
       "title": "Autonomy Levels",
       "section": "automation-strategies",
       "description": "Define graduated permission tiers for agents, from read-only to fully autonomous, tied to risk and context.",
       "hasExample": false,
-      "path": "patterns/0020-autonomy-levels/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["automation-strategies", "autonomy", "permissions", "risk-management", "graduated-control", "safety"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "automation-strategies",
+        "autonomy",
+        "permissions",
+        "risk-management",
+        "graduated-control",
+        "safety"
+      ]
     },
     {
-      "id": "approval-gates",
+      "id": "0021-approval-gates",
       "title": "Approval Gates",
       "section": "automation-strategies",
       "description": "Insert lightweight human checkpoints at high-risk steps, with clear SLAs and fallback behavior.",
       "hasExample": false,
-      "path": "patterns/0021-approval-gates/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["automation-strategies", "human-oversight", "approval-workflow", "risk-management", "sla", "fallbacks"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "automation-strategies",
+        "human-oversight",
+        "approval-workflow",
+        "risk-management",
+        "sla",
+        "fallbacks"
+      ]
     },
     {
-      "id": "planner-worker-decomposition",
+      "id": "0022-planner-worker-decomposition",
       "title": "Planner–Worker Decomposition",
       "section": "automation-strategies",
       "description": "Split problem solving (plans) from action taking (workers) so you can audit intent separately from execution.",
       "hasExample": false,
-      "path": "patterns/0022-planner-worker-decomposition/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["automation-strategies", "separation-of-concerns", "planning", "execution", "auditability", "orchestration"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "automation-strategies",
+        "separation-of-concerns",
+        "planning",
+        "execution",
+        "auditability",
+        "orchestration"
+      ]
     },
     {
-      "id": "skill-router",
+      "id": "0023-skill-router",
       "title": "Skill Router",
       "section": "automation-strategies",
       "description": "Route tasks to the best tool or specialist agent via explicit criteria, not guesswork.",
       "hasExample": false,
-      "path": "patterns/0023-skill-router/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["automation-strategies", "routing", "specialization", "task-distribution", "optimization", "load-balancing"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "automation-strategies",
+        "routing",
+        "specialization",
+        "task-distribution",
+        "optimization",
+        "load-balancing"
+      ]
     },
     {
-      "id": "batch-and-schedule-windows",
+      "id": "0024-batch-and-schedule-windows",
       "title": "Batch & Schedule Windows",
       "section": "automation-strategies",
       "description": "Run automations at the right cadence and time windows to reduce cost, load, and disruption.",
       "hasExample": false,
-      "path": "patterns/0024-batch-and-schedule-windows/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["automation-strategies", "scheduling", "batching", "cost-optimization", "resource-management", "timing"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "automation-strategies",
+        "scheduling",
+        "batching",
+        "cost-optimization",
+        "resource-management",
+        "timing"
+      ]
     },
     {
-      "id": "black-box-opaqueness",
+      "id": "0025-black-box-opaqueness",
       "title": "Black-Box Opaqueness",
       "section": "anti-patterns",
       "description": "Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production.",
       "hasExample": false,
-      "path": "patterns/0025-black-box-opaqueness/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["anti-patterns", "transparency", "debugging", "opacity", "production-issues", "trust"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "anti-patterns",
+        "transparency",
+        "debugging",
+        "opacity",
+        "production-issues",
+        "trust"
+      ]
     },
     {
-      "id": "hero-agent",
+      "id": "0026-hero-agent",
       "title": "Hero Agent",
       "section": "anti-patterns",
       "description": "The \"one agent to rule them all\" — a giant prompt that tries to do everything. Looks magical in demos, but becomes brittle, unscalable, and unmanageable.",
       "hasExample": false,
-      "path": "patterns/0026-hero-agent/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["anti-patterns", "monolithic", "scalability", "brittleness", "complexity", "maintainability"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "anti-patterns",
+        "monolithic",
+        "scalability",
+        "brittleness",
+        "complexity",
+        "maintainability"
+      ]
     },
     {
-      "id": "infinite-debate",
+      "id": "0027-infinite-debate",
       "title": "Infinite Debate",
       "section": "anti-patterns",
       "description": "Endless arguments that block progress. Without a structure for turning disagreement into paths, teams burn time instead of discovering.",
       "hasExample": false,
-      "path": "patterns/0027-infinite-debate/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["anti-patterns", "team-dynamics", "decision-making", "progress-blocking", "debate", "velocity"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "anti-patterns",
+        "team-dynamics",
+        "decision-making",
+        "progress-blocking",
+        "debate",
+        "velocity"
+      ]
     },
     {
-      "id": "perma-beta",
+      "id": "0028-perma-beta",
       "title": "Perma-Beta",
       "section": "anti-patterns",
       "description": "Staying in \"beta\" forever. Experiments pile up with no merges, leaving systems unstable, users frustrated, and builders demoralized.",
       "hasExample": false,
-      "path": "patterns/0028-perma-beta/",
       "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
-      "tags": ["anti-patterns", "deployment", "beta", "stability", "user-experience", "technical-debt"]
+      "createdAt": "2025-01-02",
+      "tags": [
+        "anti-patterns",
+        "deployment",
+        "beta",
+        "stability",
+        "user-experience",
+        "technical-debt"
+      ]
     }
   ],
   "sections": [
@@ -318,7 +486,7 @@
     },
     {
       "id": "governance",
-      "title": "Governance Patterns", 
+      "title": "Governance Patterns",
       "description": "How AI teams organize discovery and make decisions. Move forward when there is uncertainty, disagreement, or risk.",
       "patternCount": 4
     },
@@ -348,119 +516,437 @@
     }
   ],
   "tags": [
-    { "name": "generation", "count": 5 },
-    { "name": "governance", "count": 4 },
-    { "name": "architecture", "count": 5 },
-    { "name": "operational", "count": 5 },
-    { "name": "automation-strategies", "count": 5 },
-    { "name": "anti-patterns", "count": 4 },
-    { "name": "debugging", "count": 3 },
-    { "name": "decision-making", "count": 4 },
-    { "name": "deployment", "count": 3 },
-    { "name": "monitoring", "count": 3 },
-    { "name": "performance", "count": 2 },
-    { "name": "reliability", "count": 3 },
-    { "name": "safety", "count": 3 },
-    { "name": "team-dynamics", "count": 3 },
-    { "name": "typescript", "count": 2 },
-    { "name": "accountability", "count": 1 },
-    { "name": "adapter-pattern", "count": 1 },
-    { "name": "agents", "count": 2 },
-    { "name": "approval-workflow", "count": 1 },
-    { "name": "async-generators", "count": 1 },
-    { "name": "audit-trail", "count": 3 },
-    { "name": "auditability", "count": 2 },
-    { "name": "autonomy", "count": 1 },
-    { "name": "batching", "count": 1 },
-    { "name": "beta", "count": 1 },
-    { "name": "brittleness", "count": 1 },
-    { "name": "budgets", "count": 1 },
-    { "name": "canary-releases", "count": 1 },
-    { "name": "chain-of-responsibility", "count": 1 },
-    { "name": "collaboration", "count": 1 },
-    { "name": "complexity", "count": 1 },
-    { "name": "consensus", "count": 1 },
-    { "name": "context-optimization", "count": 1 },
-    { "name": "contracts", "count": 2 },
-    { "name": "cost-management", "count": 1 },
-    { "name": "cost-optimization", "count": 2 },
-    { "name": "debate", "count": 1 },
-    { "name": "deterministic", "count": 1 },
-    { "name": "documentation", "count": 1 },
-    { "name": "error-handling", "count": 2 },
-    { "name": "evaluation", "count": 2 },
-    { "name": "evidence-based", "count": 1 },
-    { "name": "execution", "count": 1 },
-    { "name": "fallbacks", "count": 2 },
-    { "name": "gradual-rollout", "count": 1 },
-    { "name": "graduated-control", "count": 1 },
-    { "name": "guardrails", "count": 1 },
-    { "name": "human-oversight", "count": 1 },
-    { "name": "institutional-memory", "count": 1 },
-    { "name": "isolation", "count": 1 },
-    { "name": "knowledge-management", "count": 1 },
-    { "name": "load-balancing", "count": 1 },
-    { "name": "logging", "count": 1 },
-    { "name": "maintainability", "count": 1 },
-    { "name": "memory-management", "count": 1 },
-    { "name": "metrics", "count": 2 },
-    { "name": "modularity", "count": 1 },
-    { "name": "monolithic", "count": 1 },
-    { "name": "mvc-pattern", "count": 1 },
-    { "name": "observability", "count": 1 },
-    { "name": "opacity", "count": 1 },
-    { "name": "optimization", "count": 1 },
-    { "name": "orchestration", "count": 2 },
-    { "name": "parallel-execution", "count": 1 },
-    { "name": "permissions", "count": 1 },
-    { "name": "planning", "count": 1 },
-    { "name": "process", "count": 1 },
-    { "name": "production", "count": 1 },
-    { "name": "production-issues", "count": 1 },
-    { "name": "production-testing", "count": 1 },
-    { "name": "progress", "count": 1 },
-    { "name": "progress-blocking", "count": 1 },
-    { "name": "redux-pattern", "count": 1 },
-    { "name": "reproducibility", "count": 1 },
-    { "name": "resilience", "count": 1 },
-    { "name": "resource-management", "count": 1 },
-    { "name": "responsiveness", "count": 1 },
-    { "name": "retrieval", "count": 1 },
-    { "name": "reversibility", "count": 1 },
-    { "name": "risk-management", "count": 3 },
-    { "name": "risk-mitigation", "count": 1 },
-    { "name": "rollback", "count": 1 },
-    { "name": "routing", "count": 1 },
-    { "name": "sandbox", "count": 1 },
-    { "name": "scalability", "count": 2 },
-    { "name": "scheduling", "count": 1 },
-    { "name": "schemas", "count": 1 },
-    { "name": "separation-of-concerns", "count": 2 },
-    { "name": "shadow-mode", "count": 1 },
-    { "name": "sla", "count": 1 },
-    { "name": "specialization", "count": 1 },
-    { "name": "stability", "count": 1 },
-    { "name": "state-management", "count": 1 },
-    { "name": "streaming", "count": 1 },
-    { "name": "task-distribution", "count": 1 },
-    { "name": "technical-debt", "count": 1 },
-    { "name": "telemetry", "count": 1 },
-    { "name": "testing", "count": 2 },
-    { "name": "thresholds", "count": 1 },
-    { "name": "timing", "count": 1 },
-    { "name": "transparency", "count": 2 },
-    { "name": "trust", "count": 1 },
-    { "name": "user-experience", "count": 2 },
-    { "name": "validation", "count": 2 },
-    { "name": "velocity", "count": 2 },
-    { "name": "zod", "count": 1 }
+    {
+      "name": "generation",
+      "count": 5
+    },
+    {
+      "name": "governance",
+      "count": 4
+    },
+    {
+      "name": "architecture",
+      "count": 5
+    },
+    {
+      "name": "operational",
+      "count": 5
+    },
+    {
+      "name": "automation-strategies",
+      "count": 5
+    },
+    {
+      "name": "anti-patterns",
+      "count": 4
+    },
+    {
+      "name": "debugging",
+      "count": 3
+    },
+    {
+      "name": "decision-making",
+      "count": 4
+    },
+    {
+      "name": "deployment",
+      "count": 3
+    },
+    {
+      "name": "monitoring",
+      "count": 3
+    },
+    {
+      "name": "performance",
+      "count": 2
+    },
+    {
+      "name": "reliability",
+      "count": 3
+    },
+    {
+      "name": "safety",
+      "count": 3
+    },
+    {
+      "name": "team-dynamics",
+      "count": 3
+    },
+    {
+      "name": "typescript",
+      "count": 2
+    },
+    {
+      "name": "accountability",
+      "count": 1
+    },
+    {
+      "name": "adapter-pattern",
+      "count": 1
+    },
+    {
+      "name": "agents",
+      "count": 2
+    },
+    {
+      "name": "approval-workflow",
+      "count": 1
+    },
+    {
+      "name": "async-generators",
+      "count": 1
+    },
+    {
+      "name": "audit-trail",
+      "count": 3
+    },
+    {
+      "name": "auditability",
+      "count": 2
+    },
+    {
+      "name": "autonomy",
+      "count": 1
+    },
+    {
+      "name": "batching",
+      "count": 1
+    },
+    {
+      "name": "beta",
+      "count": 1
+    },
+    {
+      "name": "brittleness",
+      "count": 1
+    },
+    {
+      "name": "budgets",
+      "count": 1
+    },
+    {
+      "name": "canary-releases",
+      "count": 1
+    },
+    {
+      "name": "chain-of-responsibility",
+      "count": 1
+    },
+    {
+      "name": "collaboration",
+      "count": 1
+    },
+    {
+      "name": "complexity",
+      "count": 1
+    },
+    {
+      "name": "consensus",
+      "count": 1
+    },
+    {
+      "name": "context-optimization",
+      "count": 1
+    },
+    {
+      "name": "contracts",
+      "count": 2
+    },
+    {
+      "name": "cost-management",
+      "count": 1
+    },
+    {
+      "name": "cost-optimization",
+      "count": 2
+    },
+    {
+      "name": "debate",
+      "count": 1
+    },
+    {
+      "name": "deterministic",
+      "count": 1
+    },
+    {
+      "name": "documentation",
+      "count": 1
+    },
+    {
+      "name": "error-handling",
+      "count": 2
+    },
+    {
+      "name": "evaluation",
+      "count": 2
+    },
+    {
+      "name": "evidence-based",
+      "count": 1
+    },
+    {
+      "name": "execution",
+      "count": 1
+    },
+    {
+      "name": "fallbacks",
+      "count": 2
+    },
+    {
+      "name": "gradual-rollout",
+      "count": 1
+    },
+    {
+      "name": "graduated-control",
+      "count": 1
+    },
+    {
+      "name": "guardrails",
+      "count": 1
+    },
+    {
+      "name": "human-oversight",
+      "count": 1
+    },
+    {
+      "name": "institutional-memory",
+      "count": 1
+    },
+    {
+      "name": "isolation",
+      "count": 1
+    },
+    {
+      "name": "knowledge-management",
+      "count": 1
+    },
+    {
+      "name": "load-balancing",
+      "count": 1
+    },
+    {
+      "name": "logging",
+      "count": 1
+    },
+    {
+      "name": "maintainability",
+      "count": 1
+    },
+    {
+      "name": "memory-management",
+      "count": 1
+    },
+    {
+      "name": "metrics",
+      "count": 2
+    },
+    {
+      "name": "modularity",
+      "count": 1
+    },
+    {
+      "name": "monolithic",
+      "count": 1
+    },
+    {
+      "name": "mvc-pattern",
+      "count": 1
+    },
+    {
+      "name": "observability",
+      "count": 1
+    },
+    {
+      "name": "opacity",
+      "count": 1
+    },
+    {
+      "name": "optimization",
+      "count": 1
+    },
+    {
+      "name": "orchestration",
+      "count": 2
+    },
+    {
+      "name": "parallel-execution",
+      "count": 1
+    },
+    {
+      "name": "permissions",
+      "count": 1
+    },
+    {
+      "name": "planning",
+      "count": 1
+    },
+    {
+      "name": "process",
+      "count": 1
+    },
+    {
+      "name": "production",
+      "count": 1
+    },
+    {
+      "name": "production-issues",
+      "count": 1
+    },
+    {
+      "name": "production-testing",
+      "count": 1
+    },
+    {
+      "name": "progress",
+      "count": 1
+    },
+    {
+      "name": "progress-blocking",
+      "count": 1
+    },
+    {
+      "name": "redux-pattern",
+      "count": 1
+    },
+    {
+      "name": "reproducibility",
+      "count": 1
+    },
+    {
+      "name": "resilience",
+      "count": 1
+    },
+    {
+      "name": "resource-management",
+      "count": 1
+    },
+    {
+      "name": "responsiveness",
+      "count": 1
+    },
+    {
+      "name": "retrieval",
+      "count": 1
+    },
+    {
+      "name": "reversibility",
+      "count": 1
+    },
+    {
+      "name": "risk-management",
+      "count": 3
+    },
+    {
+      "name": "risk-mitigation",
+      "count": 1
+    },
+    {
+      "name": "rollback",
+      "count": 1
+    },
+    {
+      "name": "routing",
+      "count": 1
+    },
+    {
+      "name": "sandbox",
+      "count": 1
+    },
+    {
+      "name": "scalability",
+      "count": 2
+    },
+    {
+      "name": "scheduling",
+      "count": 1
+    },
+    {
+      "name": "schemas",
+      "count": 1
+    },
+    {
+      "name": "separation-of-concerns",
+      "count": 2
+    },
+    {
+      "name": "shadow-mode",
+      "count": 1
+    },
+    {
+      "name": "sla",
+      "count": 1
+    },
+    {
+      "name": "specialization",
+      "count": 1
+    },
+    {
+      "name": "stability",
+      "count": 1
+    },
+    {
+      "name": "state-management",
+      "count": 1
+    },
+    {
+      "name": "streaming",
+      "count": 1
+    },
+    {
+      "name": "task-distribution",
+      "count": 1
+    },
+    {
+      "name": "technical-debt",
+      "count": 1
+    },
+    {
+      "name": "telemetry",
+      "count": 1
+    },
+    {
+      "name": "testing",
+      "count": 2
+    },
+    {
+      "name": "thresholds",
+      "count": 1
+    },
+    {
+      "name": "timing",
+      "count": 1
+    },
+    {
+      "name": "transparency",
+      "count": 2
+    },
+    {
+      "name": "trust",
+      "count": 1
+    },
+    {
+      "name": "user-experience",
+      "count": 2
+    },
+    {
+      "name": "validation",
+      "count": 2
+    },
+    {
+      "name": "velocity",
+      "count": 2
+    },
+    {
+      "name": "zod",
+      "count": 1
+    }
   ],
   "metadata": {
     "totalPatterns": 28,
     "totalSections": 6,
     "patternsWithExamples": 6,
     "totalTags": 96,
-    "lastUpdated": "2024-08-30",
+    "lastUpdated": "2025-01-02",
     "version": "1.0.0"
   }
 }

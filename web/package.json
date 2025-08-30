@@ -22,12 +22,17 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cdk": "^20.2.1",
     "@angular/common": "^20.2.0",
     "@angular/compiler": "^20.2.0",
     "@angular/core": "^20.2.0",
     "@angular/forms": "^20.2.0",
+    "@angular/material": "^20.2.1",
     "@angular/platform-browser": "^20.2.0",
     "@angular/router": "^20.2.0",
+    "marked": "^15.0.12",
+    "ngx-markdown": "^20.0.0",
+    "prismjs": "^1.30.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
