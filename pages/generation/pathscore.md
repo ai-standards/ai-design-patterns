@@ -49,4 +49,39 @@ The **PathScore** pattern provides a simple, comparative measure. It combines re
 **Cons**  
 - Over-simplifies complex trade-offs.  
 - Requires careful metric design.  
-- Can be gamed if misapplied.  
+- Can be gamed if misapplied.
+
+---
+
+## Example
+
+See the [complete TypeScript implementation](../../examples/pathscore/) for a working example.
+
+```typescript
+import { PathScorer } from './pathscore.js';
+
+// Define baseline and scoring criteria
+const scorer = new PathScorer({
+  baseline: { accuracy: 0.8, latencyMs: 1000, tokensUsed: 500, costUsd: 0.10 },
+  minimums: { accuracy: 0.75, maxLatencyMs: 2000, maxCostUsd: 0.20 },
+  weights: { accuracy: 2.0, latency: 1.0, cost: 1.5 }
+});
+
+// Score a candidate path
+const candidate = {
+  id: 'improved-model',
+  metrics: { accuracy: 0.92, latencyMs: 800, tokensUsed: 450, costUsd: 0.12 }
+};
+
+const result = scorer.scoreCandidate(candidate);
+console.log(`Score: ${result.score.toFixed(3)}`);           // Score: 0.847
+console.log(`Recommendation: ${result.recommendation}`);     // Recommendation: merge
+
+// Compare multiple candidates
+const best = scorer.getBestCandidate([candidate1, candidate2, candidate3]);
+if (best?.recommendation === 'merge') {
+  deployToProduction(best.pathId);
+}
+```
+
+Key insight: Instead of endless debates about trade-offs, PathScore provides a single comparable metric that balances impact against cost, making merge decisions objective and automated.  
