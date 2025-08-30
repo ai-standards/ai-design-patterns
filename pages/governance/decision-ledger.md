@@ -44,4 +44,64 @@ The **Decision Ledger** pattern solves this by recording every major decision al
 
 **Cons**  
 - Requires discipline to keep updated.  
-- Can become noise if over-detailed.  
+- Can become noise if over-detailed.
+
+---
+
+## Example
+
+See the [complete TypeScript implementation](../../examples/decision-ledger/) for a working example.
+
+```typescript
+import { DecisionLedger } from './decision-ledger.js';
+
+const ledger = new DecisionLedger();
+
+// Record a decision with full context and alternatives
+const decision = ledger.recordDecision(
+  'Choose LLM Provider',
+  'Use OpenAI GPT-4 for our AI features',
+  'GPT-4 provides the best balance of capability, reliability, and cost for our use case',
+  'alice@company.com',
+  {
+    alternatives: [
+      {
+        option: 'Anthropic Claude',
+        pros: ['Good safety features', 'Long context window'],
+        cons: ['Higher cost', 'Less mature API'],
+        whyRejected: 'Cost concerns and API stability questions'
+      },
+      {
+        option: 'Open-source Llama',
+        pros: ['No API costs', 'Full control'],
+        cons: ['Infrastructure complexity', 'Lower quality'],
+        whyRejected: 'Team lacks ML infrastructure expertise'
+      }
+    ],
+    stakeholders: ['alice@company.com', 'bob@company.com', 'charlie@company.com'],
+    context: 'Building customer support chatbot for Q2 launch',
+    tags: ['architecture', 'llm', 'vendor-selection']
+  }
+);
+
+// Later, record what actually happened
+ledger.updateOutcome(
+  decision.id,
+  'GPT-4 integration successful. 95% user satisfaction, 40% reduction in support tickets.'
+);
+
+// Months later, avoid re-debating by querying past decisions
+const llmDecisions = ledger.query({
+  tags: ['llm'],
+  status: 'active'
+});
+
+console.log('Previous LLM decisions:');
+llmDecisions.forEach(d => {
+  console.log(`${d.title}: ${d.decision}`);
+  console.log(`Rationale: ${d.rationale}`);
+  if (d.outcome) console.log(`Outcome: ${d.outcome}`);
+});
+```
+
+Key insight: Instead of forgetting why decisions were made and re-debating them months later, preserve the full context and rationale. This creates institutional memory that prevents wasted time and helps new team members understand the reasoning behind current choices.  
