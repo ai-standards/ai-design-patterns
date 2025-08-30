@@ -10,16 +10,16 @@ The purpose of documenting anti-patterns is not to shame experimentation — it�
 
 ## Catalog
 
-### [Black-Box Opaqueness](./9001-black-box-opaqueness.md)  
+### [Black-Box Opaqueness](./black-box-opaqueness.md)  
 Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production.  
 
-### [Hero Agent](./9002-hero-agent.md)  
+### [Hero Agent](./hero-agent.md)  
 The “one agent to rule them all” — a giant prompt that tries to do everything. Looks magical in demos, but becomes brittle, unscalable, and unmanageable.  
 
-### [Infinite Debate](./9003-infinite-debate.md)  
+### [Infinite Debate](./infinite-debate.md)  
 Endless arguments that block progress. Without a structure for turning disagreement into paths, teams burn time instead of discovering.  
 
-### [Perma-Beta](./9004-perma-beta.md)  
+### [Perma-Beta](./perma-beta.md)  
 Staying in “beta” forever. Experiments pile up with no merges, leaving systems unstable, users frustrated, and builders demoralized.  
 
 ---
