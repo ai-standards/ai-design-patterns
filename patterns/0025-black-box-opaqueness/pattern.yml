@@ -1,0 +1,11 @@
+title: "Black-Box Opaqueness"
+description: "Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - anti-patterns
+  - transparency
+  - debugging
+  - opacity
+  - production-issues
+  - trust

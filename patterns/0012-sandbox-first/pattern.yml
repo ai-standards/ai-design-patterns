@@ -1,0 +1,11 @@
+title: "Sandbox-First"
+description: "Run risky or untrusted actions in isolation before touching production. Dry-runs and mocks protect systems from catastrophic errors."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - architecture
+  - safety
+  - isolation
+  - testing
+  - risk-management
+  - sandbox

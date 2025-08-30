@@ -1,0 +1,11 @@
+title: "Planner–Worker Decomposition"
+description: "Split problem solving (plans) from action taking (workers) so you can audit intent separately from execution."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - automation-strategies
+  - separation-of-concerns
+  - planning
+  - execution
+  - auditability
+  - orchestration

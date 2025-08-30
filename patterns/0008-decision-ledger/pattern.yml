@@ -1,0 +1,11 @@
+title: "Decision Ledger"
+description: "Preserve the rationale behind decisions so they aren't forgotten or relitigated. A simple log of decisions, dates, and rationale saves teams from repeating old debates."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - governance
+  - decision-making
+  - institutional-memory
+  - documentation
+  - knowledge-management
+  - typescript

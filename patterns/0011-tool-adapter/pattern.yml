@@ -1,0 +1,11 @@
+title: "Tool Adapter"
+description: "Wrap volatile or risky tools in strict contracts. Adapters validate, retry, and log so agents only see safe, stable interfaces."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - architecture
+  - adapter-pattern
+  - safety
+  - contracts
+  - error-handling
+  - reliability

@@ -1,0 +1,11 @@
+title: "Canary Tokens"
+description: "Roll out changes gradually by allocating small slices of traffic or token budgets before scaling system-wide."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - operational
+  - deployment
+  - canary-releases
+  - gradual-rollout
+  - risk-mitigation
+  - monitoring

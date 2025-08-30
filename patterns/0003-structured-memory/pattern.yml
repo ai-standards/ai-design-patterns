@@ -1,0 +1,11 @@
+title: "Structured Memory"
+description: "Separate short-term context from long-term knowledge. Prevent prompt bloat and improve reliability by treating memory as tiers."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - generation
+  - memory-management
+  - context-optimization
+  - performance
+  - scalability
+  - retrieval

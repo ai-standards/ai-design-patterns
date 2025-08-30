@@ -1,0 +1,11 @@
+title: "Telemetry Ledger"
+description: "Record all inputs, outputs, and metadata so behavior can be debugged, audited, and reproduced."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - operational
+  - telemetry
+  - observability
+  - debugging
+  - audit-trail
+  - monitoring

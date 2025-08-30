@@ -1,0 +1,11 @@
+title: "Agentic Redux"
+description: "Apply Redux-style discipline to AI systems. Agents propose state updates, reducers validate and apply them, and the canonical store remains compact, deterministic, and auditable."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - architecture
+  - state-management
+  - redux-pattern
+  - agents
+  - deterministic
+  - auditability

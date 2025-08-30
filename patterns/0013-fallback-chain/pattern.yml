@@ -1,0 +1,11 @@
+title: "Fallback Chain"
+description: "Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - architecture
+  - resilience
+  - error-handling
+  - fallbacks
+  - reliability
+  - chain-of-responsibility

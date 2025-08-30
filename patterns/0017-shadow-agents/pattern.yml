@@ -1,0 +1,11 @@
+title: "Shadow Agents"
+description: "Test new agents in parallel with production by logging their results invisibly until they are proven."
+author: "AI Design Patterns Team"
+createdAt: "2024-08-30"
+tags:
+  - operational
+  - testing
+  - parallel-execution
+  - validation
+  - production-testing
+  - shadow-mode
