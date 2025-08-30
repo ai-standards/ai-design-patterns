@@ -1,4 +1,4 @@
-# 🏗️ Architecture Patterns
+# Architecture Patterns
 
 Architecture patterns describe **how AI systems are structured**.  
 They answer the question: *how do we organize agents, tools, and views so that discovery doesn’t collapse into chaos?*  
