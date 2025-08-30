@@ -48,4 +48,54 @@ The **Streaming First** pattern changes this by designing systems around increme
 
 **Cons**  
 - Adds pipeline complexity.  
-- Partial results may need reassembly or correction.  
+- Partial results may need reassembly or correction.
+
+---
+
+## Example
+
+See the [complete TypeScript implementation](../../examples/streaming-first/) for a working example.
+
+```typescript
+import { StreamingGenerator, StreamRenderer } from './streaming-generator.js';
+
+const generator = new StreamingGenerator();
+const renderer = new StreamRenderer();
+
+// Create a streaming generator that yields content progressively
+const stream = generator.generateStream(
+  'Explain how streaming improves user experience',
+  {
+    chunkDelayMs: 100,    // Delay between chunks for realistic streaming
+    maxChunkSize: 5,      // Words per chunk
+    onChunk: (chunk) => {
+      // Handle each chunk as it arrives - could update UI, trigger actions, etc.
+      console.log(`Received: ${chunk.content}`);
+      
+      // Act on partial content before completion
+      if (chunk.content.includes('important_keyword')) {
+        triggerEarlyAction();
+      }
+    },
+    onComplete: (result) => {
+      console.log(`Stream completed: ${result.totalTokens} tokens`);
+    }
+  }
+);
+
+// Render with real-time visual feedback
+await renderer.renderStream(stream, {
+  showProgress: true,
+  showMetadata: true
+});
+
+// Alternative: consume stream manually
+for await (const chunk of stream) {
+  updateUI(chunk.content);  // Progressive UI updates
+  if (shouldStopEarly(chunk)) {
+    break;  // Can terminate early based on content
+  }
+}
+```
+
+Key insight: Instead of making users wait in silence for complete responses, stream content progressively. This provides immediate feedback, enables early action on partial results, and dramatically improves perceived performance even when total generation time is the same.  
