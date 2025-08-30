@@ -2,15 +2,11 @@
 
 **Intent**: Evaluate candidate paths with a single metric that balances impact against cost.
 
----
-
 ## Introduction
 
 AI teams often struggle with choosing which path to merge. Some candidates deliver higher accuracy, others run faster, while still others reduce cost. In the absence of a shared yardstick, debates can drag on, decisions get politicized, and projects stall.  
 
 The **PathScore** pattern addresses this by offering a simple, comparative measure. By blending *relative value* (impact) with *relative cost* (tokens, time, or evaluation effort), it creates a single number that teams can rally around. Anything above baseline is better; anything below is worse. This turns subjective debates into clear, data-backed decisions.
-
----
 
 ## Problem
 
@@ -20,8 +16,6 @@ Without PathScore, teams face familiar frustrations:
 - Conversations quickly devolve into opinion wars.  
 - Cost and value are often considered in isolation, leading to skewed priorities.  
 - Unclear criteria delay merges, creating bottlenecks and frustration.  
-
----
 
 ## Forces
 
@@ -33,8 +27,6 @@ The challenge isn’t just about metrics — it’s about trade-offs:
 
 These tensions are unavoidable. The goal of PathScore is not to erase them, but to channel them into a consistent, transparent process.
 
----
-
 ## Solution
 
 PathScore provides that process. It works by:
@@ -45,8 +37,6 @@ PathScore provides that process. It works by:
 4. Using the resulting score as a guide for merge-or-kill decisions.  
 
 In practice, this means every candidate can be compared apples-to-apples. Instead of arguing, teams look at the number.
-
----
 
 ## Consequences
 
