@@ -25,11 +25,14 @@
           </mat-card-actions>
         </mat-card>
         <mat-card>
+          <mat-card-header>
+            <mat-card-title>User Story</mat-card-title>
+          </mat-card-header>
           <mat-card-content>
-              <markdown>{{userStoryPreview()}}</markdown> 
+              <markdown [data]="userStoryPreview()"></markdown> 
           </mat-card-content>
           <mat-card-actions>
-            <button mat-flat-button>Read More</button>
+            <button [routerLink]="['/patterns', p.section, p.id, 'story']" mat-flat-button>Read More</button>
           </mat-card-actions>
         </mat-card>
       </div>

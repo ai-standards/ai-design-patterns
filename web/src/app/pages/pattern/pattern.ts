@@ -1,8 +1,7 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, OnInit, OnDestroy, signal } from '@angular/core';
 import { PatternService } from '../../services/pattern';
-import { ActivatedRoute } from '@angular/router';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { map, switchMap, catchError, of } from 'rxjs';
+import { ActivatedRoute, ActivatedRouteSnapshot, RouterLink } from '@angular/router';
+import { map, Subscription } from 'rxjs';
 import { MarkdownComponent } from "ngx-markdown";
 import { MatCardModule } from '@angular/material/card';
 import { Landing } from "../landing/landing";
@@ -14,43 +13,39 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-pattern',
   standalone: true,
-  imports: [MarkdownComponent, MatCardModule, Landing, Layout, MatChip, MatButtonModule],
+  imports: [MarkdownComponent, MatCardModule, Layout, MatChip, MatButtonModule, RouterLink],
   templateUrl: './pattern.html',
   styleUrl: './pattern.scss'
 })
-export class Pattern {
+export class Pattern implements OnInit, OnDestroy {
   readonly patternService = inject(PatternService); 
-  readonly activatedRoute = inject(ActivatedRoute);
-  readonly activeId = toSignal(this.activatedRoute.params.pipe(map(params => params['id'] || undefined)));
-  readonly http = inject(HttpClient);
+  readonly route = inject(ActivatedRoute);
 
-  readonly pattern = computed(() => {
-    const patterns = this.patternService.patterns();
-    if (! patterns) {
-      return undefined;
-    }
-    const activeId = this.activeId();
-    if (! activeId) {
-      return undefined;
-    }
-    return patterns.find(pattern => pattern.id === activeId);
-  });
+  readonly pattern = signal<any>(undefined);
+  readonly userStoryPreview = signal<string>('')
+  
+  private subscription?: Subscription;
 
-  readonly userStoryPreview = toSignal(
-    this.activatedRoute.params.pipe(
-      map(params => params['id']),
-      switchMap(id => {
-        if (!id) return of('');
-        return this.http.get(`https://raw.githubusercontent.com/ai-standards/ai-design-patterns/refs/heads/main/patterns/${id}/user-story.md`, { 
-          responseType: 'text' 
-        }).pipe(
-          map(res => res.toString().split('\n').slice(0, 12).join('\n')),
-          catchError(error => {
-            console.warn(`Could not fetch user story for pattern ${id}:`, error);
-            return of('');
-          })
-        );
-      })
-    )
-  );
+  async ngOnInit(): Promise<void> {
+    this.subscription = this.route.params.pipe(map(p => p['id'])).subscribe(id => this.loadPattern(id))
+  }
+
+  ngOnDestroy(): void {
+    this.subscription?.unsubscribe();
+  }
+
+  async loadPattern(id: string) {
+    // load pattern
+    const pattern = await this.patternService.find(id);
+    this.pattern.set(pattern || undefined);
+
+    // load story
+    const story = await this.patternService.userStory(id);
+    if (story) {
+      const preview = story.split('\n').slice(1, 12).join('\n');
+      this.userStoryPreview.set(preview);
+    } else {
+      this.userStoryPreview.set('')
+    }
+  }
 }

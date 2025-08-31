@@ -1,1 +1,15 @@
-<p>user-story works!</p>
+<app-layout>
+    @if(pattern(); as p) {
+        @if (userStory(); as u) {
+            <div class="page-wrapper">
+              <div class="page">
+                  <button mat-button [routerLink]="['/patterns', p.section, p.id]">
+                      <mat-icon fontIcon="arrow_back"></mat-icon>
+                      Back to {{p.title | patternTitle}}
+                  </button>
+                <markdown [data]="userStory()"></markdown> 
+              </div>
+            </div>
+          }
+    }
+  </app-layout>
