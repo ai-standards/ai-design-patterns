@@ -1,9 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const { glob } = require('glob');
-const yaml = require('js-yaml');
 
-function getExampleFiles(examplePath) {
+function getAllPatternFiles(patternDir) {
   const files = [];
   
   function walkDir(dir, basePath = '') {
@@ -20,16 +19,16 @@ function getExampleFiles(examplePath) {
           walkDir(fullPath, relativePath);
         }
       } else if (stat.isFile()) {
-        // Only include source files
+        // Include all relevant files
         const ext = path.extname(entry);
-        if (['.ts', '.js', '.json', '.md', '.yml', '.yaml'].includes(ext)) {
+        if (['.ts', '.json', '.md'].includes(ext)) {
           files.push(relativePath);
         }
       }
     }
   }
   
-  walkDir(examplePath);
+  walkDir(patternDir);
   return files.sort();
 }
 
@@ -38,36 +37,37 @@ function buildIndex() {
   const sections = new Map();
   const tagCounts = new Map();
 
-  // Get all pattern.yml files (from project root)
-  const patternFiles = glob.sync('../patterns/*/pattern.yml');
-  console.log(`Found ${patternFiles.length} pattern files`);
+  // Get all package.json files (from project root)
+  const packageFiles = glob.sync('../patterns/*/package.json');
+  console.log(`Found ${packageFiles.length} package.json files`);
 
-  for (const filePath of patternFiles) {
+  for (const filePath of packageFiles) {
     const dir = path.basename(path.dirname(filePath));
-    const patternYml = yaml.load(fs.readFileSync(filePath, 'utf8'));
+    const packageJson = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     
-    // Check if example exists and get source files
-    const examplePath = path.join(path.dirname(filePath), 'example');
-    const hasExample = fs.existsSync(examplePath) && 
-      fs.statSync(examplePath).isDirectory() &&
-      fs.readdirSync(examplePath).length > 0;
+    // Check if src exists and get all pattern files
+    const patternDir = path.dirname(filePath);
+    const srcPath = path.join(patternDir, 'src');
+    const hasSrc = fs.existsSync(srcPath) && 
+      fs.statSync(srcPath).isDirectory() &&
+      fs.readdirSync(srcPath).length > 0;
     
-    const exampleFiles = hasExample ? getExampleFiles(examplePath) : [];
+    const srcFiles = getAllPatternFiles(patternDir);
 
-    // Extract section from tags (first tag should be section)
-    const section = patternYml.tags[0];
+    // Extract section from keywords (first keyword should be section)
+    const section = packageJson.keywords && packageJson.keywords.length > 0 ? packageJson.keywords[0] : 'uncategorized';
 
     // Build pattern object
     const pattern = {
       id: dir,
-      title: patternYml.title,
+      title: packageJson.name.replace('@ai-design-patterns/', ''),
       section: section,
-      description: patternYml.description,
-      hasExample: hasExample,
-      exampleFiles: exampleFiles,
-      author: patternYml.author,
-      createdAt: patternYml.createdAt,
-      tags: patternYml.tags
+      description: packageJson.description,
+      hasExample: hasSrc,
+      exampleFiles: srcFiles,
+      author: packageJson.author,
+      createdAt: new Date().toISOString().split('T')[0], // Use current date as fallback
+      tags: packageJson.keywords || []
     };
 
     patterns.push(pattern);
@@ -84,9 +84,11 @@ function buildIndex() {
     sections.get(section).patternCount++;
 
     // Count tags
-    patternYml.tags.forEach(tag => {
-      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
-    });
+    if (packageJson.keywords) {
+      packageJson.keywords.forEach(tag => {
+        tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+      });
+    }
   }
 
   // Build sections array
@@ -122,7 +124,7 @@ function buildIndex() {
   console.log(`✅ Built index.json with ${patterns.length} patterns`);
   console.log(`   Sections: ${sectionsArray.length}`);
   console.log(`   Tags: ${tagsArray.length}`);
-  console.log(`   With examples: ${patterns.filter(p => p.hasExample).length}`);
+  console.log(`   With src: ${patterns.filter(p => p.hasExample).length}`);
 }
 
 function getSectionTitle(section) {

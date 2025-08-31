@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0019-telemetry-ledger",
+  "version": "1.0.0",
+  "description": "Record all inputs, outputs, and metadata so behavior can be debugged, audited, and reproduced.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "operational",
+    "telemetry",
+    "observability",
+    "debugging",
+    "audit-trail",
+    "monitoring"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

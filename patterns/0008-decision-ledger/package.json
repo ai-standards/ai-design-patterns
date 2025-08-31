@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0008-decision-ledger",
+  "version": "1.0.0",
+  "description": "Preserve the rationale behind decisions so they aren't forgotten or relitigated. A simple log of decisions, dates, and rationale saves teams from repeating old debates.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "governance",
+    "decision-making",
+    "institutional-memory",
+    "documentation",
+    "knowledge-management",
+    "typescript"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

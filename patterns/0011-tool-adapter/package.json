@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0011-tool-adapter",
+  "version": "1.0.0",
+  "description": "Wrap volatile or risky tools in strict contracts. Adapters validate, retry, and log so agents only see safe, stable interfaces.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "architecture",
+    "adapter-pattern",
+    "safety",
+    "contracts",
+    "error-handling",
+    "reliability"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

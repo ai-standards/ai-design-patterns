@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0005-pathscore",
+  "version": "1.0.0",
+  "description": "A single-number evaluation metric for comparing paths before merging. Balances value (impact) against cost (tokens, time, eval bill).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "generation",
+    "evaluation",
+    "decision-making",
+    "metrics",
+    "deployment",
+    "cost-optimization"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

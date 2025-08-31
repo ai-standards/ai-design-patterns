@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0009-lazy-consensus",
+  "version": "1.0.0",
+  "description": "Default to progress unless there is strong, constructive objection. Silence means consent; objections must come with a counter-path.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "governance",
+    "consensus",
+    "decision-making",
+    "progress",
+    "team-dynamics",
+    "velocity"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

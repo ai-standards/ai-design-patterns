@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0015-rollback-ledger",
+  "version": "1.0.0",
+  "description": "Make every launch reversible. Nothing enters production unless it can also be rolled back cleanly.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "operational",
+    "deployment",
+    "rollback",
+    "safety",
+    "production",
+    "reversibility"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

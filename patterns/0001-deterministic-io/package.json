@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0001-deterministic-io",
+  "version": "1.0.0",
+  "description": "Schema-first prompting. Define contracts for every output so results are testable, reproducible, and debuggable.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "generation",
+    "schemas",
+    "validation",
+    "reliability",
+    "typescript",
+    "zod"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

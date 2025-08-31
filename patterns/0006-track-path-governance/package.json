@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0006-track-path-governance",
+  "version": "1.0.0",
+  "description": "Replace personality-driven debates with structured exploration. Work is organized into tracks (shared goals) and paths (alternative approaches). Evidence determines which path merges back, not ego.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "governance",
+    "team-dynamics",
+    "decision-making",
+    "collaboration",
+    "evidence-based",
+    "process"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0025-black-box-opaqueness",
+  "version": "1.0.0",
+  "description": "Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "anti-patterns",
+    "transparency",
+    "debugging",
+    "opacity",
+    "production-issues",
+    "trust"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

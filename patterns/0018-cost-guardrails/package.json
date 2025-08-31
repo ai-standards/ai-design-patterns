@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0018-cost-guardrails",
+  "version": "1.0.0",
+  "description": "Prevent runaway token or compute costs by enforcing explicit budgets and thresholds at every layer.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "operational",
+    "cost-management",
+    "budgets",
+    "guardrails",
+    "monitoring",
+    "thresholds"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

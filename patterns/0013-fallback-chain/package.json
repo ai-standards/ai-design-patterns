@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0013-fallback-chain",
+  "version": "1.0.0",
+  "description": "Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "architecture",
+    "resilience",
+    "error-handling",
+    "fallbacks",
+    "reliability",
+    "chain-of-responsibility"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

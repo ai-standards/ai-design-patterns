@@ -1,0 +1,32 @@
+{
+  "name": "@ai-design-patterns/0007-eval-as-contract",
+  "version": "1.0.0",
+  "description": "Define evaluation criteria up front so merges are based on evidence, not persuasion. Metrics agreed before work begins prevent shifting goalposts.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "governance",
+    "evaluation",
+    "contracts",
+    "metrics",
+    "accountability",
+    "transparency"
+  ],
+  "author": "flyman",
+  "license": "MIT",
+  "docs": {
+    "index": "README.md"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  }
+}

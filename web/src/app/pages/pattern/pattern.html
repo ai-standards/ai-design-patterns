@@ -1,1 +1,38 @@
-<p>pattern works!</p>
+<app-layout>
+  @if (pattern(); as p) {
+    <div class="page-wrapper">
+  
+      <div class="page">
+        <markdown 
+          [src]="'https://raw.githubusercontent.com/ai-standards/ai-design-patterns/refs/heads/main/patterns/' + p.id + '/README.md'"
+        ></markdown> 
+      </div>
+      <div class="sidebar">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{p.title}} <small>{{p.section}}</small></mat-card-title>
+            <mat-card-subtitle>Created by {{p.author}} @ {{p.createdAt}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{p.description}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <div class="tags">
+              @for (tag of p.tags; track tag) {
+                <mat-chip>{{ tag }}</mat-chip>
+              }
+            </div>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card>
+          <mat-card-content>
+              <markdown>{{userStoryPreview()}}</markdown> 
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-flat-button>Read More</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  }
+</app-layout>
