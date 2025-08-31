@@ -6,19 +6,23 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { PatternService } from '../../services/pattern';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { Breadcrumbs } from "../breadcrumbs/breadcrumbs";
+import { PageToolbar } from "../page-toolbar/page-toolbar";
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule, MatListModule, MatDividerModule, MatExpansionModule, RouterModule],
+  imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule, MatListModule, MatDividerModule, MatExpansionModule, RouterModule, Breadcrumbs, PageToolbar],
   templateUrl: './layout.html',
   styleUrl: './layout.scss',
   encapsulation: ViewEncapsulation.None
 })
 export class Layout {
   readonly patternService = inject(PatternService);
+  readonly route = inject(ActivatedRoute);
 
   readonly sidenavOpen = signal(true);
   readonly sections = computed(() => {
@@ -53,6 +57,20 @@ export class Layout {
     });
     
     return index;
+  });
+
+  readonly activeUrl = toSignal(this.route.url);
+
+  readonly breadcrumbs = computed(() => {
+    const url = this.activeUrl();
+    let path = [];
+    return url ? url.map(s => {
+      path.push(s);
+      return {
+        label: s.path.replace(/-/g, ' '),
+        path: '/' + path.join('/')
+      }
+    }) : [];
   });
 
   toggleSidenav() {

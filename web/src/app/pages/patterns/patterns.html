@@ -29,7 +29,7 @@
           </mat-card-content>
           
           <mat-card-actions>
-            <button mat-button [routerLink]="['/patterns', pattern.id]">
+            <button mat-button [routerLink]="['/patterns', pattern.section, pattern.id]">
               View Pattern
             </button>
             @if (pattern.hasExample) {
