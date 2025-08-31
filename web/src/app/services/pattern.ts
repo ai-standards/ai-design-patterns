@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { firstValueFrom, map, Observable } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { PatternIndex } from '../lib/models/pattern';
+import { PatternIndex, Pattern } from '../lib/models/pattern';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +17,7 @@ export class PatternService {
   
   patterns = toSignal(this.patterns$);
 
-  find(patternId: string) {
+  find(patternId: string): Promise<Pattern | undefined> {
     return firstValueFrom(this.patterns$.pipe(
       map(patterns => patterns?.find(p => p.id === patternId) || undefined)
     ))

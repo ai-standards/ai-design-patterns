@@ -24,6 +24,7 @@
             </div>
           </mat-card-actions>
         </mat-card>
+
         <mat-card>
           <mat-card-header>
             <mat-card-title>User Story</mat-card-title>
@@ -33,6 +34,33 @@
           </mat-card-content>
           <mat-card-actions>
             <button [routerLink]="['/patterns', p.section, p.id, 'story']" mat-flat-button>Read More</button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Code Example</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="tree">
+              <div class="node">
+                <mat-icon>data_object</mat-icon>
+                package.json
+              </div>
+              <div class="node">
+                <mat-icon>folder</mat-icon>
+                src
+              </div>
+              @for (f of exampleFiles(); track $index) {
+                <div class="node indent">
+                  <mat-icon>code</mat-icon>
+                  {{f}}
+                </div>
+              }
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button [routerLink]="['/patterns', p.section, p.id, 'example']" mat-flat-button>View Code</button>
           </mat-card-actions>
         </mat-card>
       </div>

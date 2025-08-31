@@ -4,6 +4,7 @@ export interface Pattern {
   section: string;
   description: string;
   hasExample: boolean;
+  exampleFiles: string[];
   path: string;
   author: string;
   createdAt: string;
