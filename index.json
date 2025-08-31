@@ -2,15 +2,20 @@
   "patterns": [
     {
       "id": "0028-perma-beta",
-      "title": "Perma-Beta",
+      "title": "0028-perma-beta",
       "section": "anti-patterns",
-      "description": "Staying in \"beta\" forever. Experiments pile up with no merges, leaving systems unstable, users frustrated, and builders demoralized.",
-      "hasExample": false,
+      "description": "Staying in \\",
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0028-perma-beta.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "anti-patterns",
         "deployment",
@@ -22,15 +27,20 @@
     },
     {
       "id": "0027-infinite-debate",
-      "title": "Infinite Debate",
+      "title": "0027-infinite-debate",
       "section": "anti-patterns",
       "description": "Endless arguments that block progress. Without a structure for turning disagreement into paths, teams burn time instead of discovering.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0027-infinite-debate.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "anti-patterns",
         "team-dynamics",
@@ -42,15 +52,20 @@
     },
     {
       "id": "0026-hero-agent",
-      "title": "Hero Agent",
+      "title": "0026-hero-agent",
       "section": "anti-patterns",
-      "description": "The \"one agent to rule them all\" — a giant prompt that tries to do everything. Looks magical in demos, but becomes brittle, unscalable, and unmanageable.",
-      "hasExample": false,
+      "description": "The \\",
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0026-hero-agent.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "anti-patterns",
         "monolithic",
@@ -62,15 +77,20 @@
     },
     {
       "id": "0025-black-box-opaqueness",
-      "title": "Black-Box Opaqueness",
+      "title": "0025-black-box-opaqueness",
       "section": "anti-patterns",
       "description": "Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0025-black-box-opaqueness.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "anti-patterns",
         "transparency",
@@ -82,15 +102,20 @@
     },
     {
       "id": "0024-batch-and-schedule-windows",
-      "title": "Batch & Schedule Windows",
+      "title": "0024-batch-and-schedule-windows",
       "section": "automation-strategies",
       "description": "Run automations at the right cadence and time windows to reduce cost, load, and disruption.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0024-batch-and-schedule-windows.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "automation-strategies",
         "scheduling",
@@ -102,15 +127,20 @@
     },
     {
       "id": "0023-skill-router",
-      "title": "Skill Router",
+      "title": "0023-skill-router",
       "section": "automation-strategies",
       "description": "Route tasks to the best tool or specialist agent via explicit criteria, not guesswork.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0023-skill-router.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "automation-strategies",
         "routing",
@@ -122,15 +152,20 @@
     },
     {
       "id": "0022-planner-worker-decomposition",
-      "title": "Planner–Worker Decomposition",
+      "title": "0022-planner-worker-decomposition",
       "section": "automation-strategies",
       "description": "Split problem solving (plans) from action taking (workers) so you can audit intent separately from execution.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0022-planner-worker-decomposition.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "automation-strategies",
         "separation-of-concerns",
@@ -142,15 +177,20 @@
     },
     {
       "id": "0021-approval-gates",
-      "title": "Approval Gates",
+      "title": "0021-approval-gates",
       "section": "automation-strategies",
       "description": "Insert lightweight human checkpoints at high-risk steps, with clear SLAs and fallback behavior.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0021-approval-gates.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "automation-strategies",
         "human-oversight",
@@ -162,16 +202,21 @@
     },
     {
       "id": "0020-autonomy-levels",
-      "title": "Autonomy Levels",
+      "title": "0020-autonomy-levels",
       "section": "automation-strategies",
       "description": "Define graduated permission tiers for agents, from read-only to fully autonomous, tied to risk and context.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
         "README.md",
-        "user-story.md"
+        "package.json",
+        "src/0020-autonomy-levels.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "automation-strategies",
         "autonomy",
@@ -183,15 +228,20 @@
     },
     {
       "id": "0019-telemetry-ledger",
-      "title": "Telemetry Ledger",
+      "title": "0019-telemetry-ledger",
       "section": "operational",
       "description": "Record all inputs, outputs, and metadata so behavior can be debugged, audited, and reproduced.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0019-telemetry-ledger.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "operational",
         "telemetry",
@@ -203,15 +253,20 @@
     },
     {
       "id": "0018-cost-guardrails",
-      "title": "Cost Guardrails",
+      "title": "0018-cost-guardrails",
       "section": "operational",
       "description": "Prevent runaway token or compute costs by enforcing explicit budgets and thresholds at every layer.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0018-cost-guardrails.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "operational",
         "cost-management",
@@ -223,15 +278,20 @@
     },
     {
       "id": "0017-shadow-agents",
-      "title": "Shadow Agents",
+      "title": "0017-shadow-agents",
       "section": "operational",
       "description": "Test new agents in parallel with production by logging their results invisibly until they are proven.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0017-shadow-agents.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "operational",
         "testing",
@@ -243,15 +303,20 @@
     },
     {
       "id": "0016-canary-tokens",
-      "title": "Canary Tokens",
+      "title": "0016-canary-tokens",
       "section": "operational",
       "description": "Roll out changes gradually by allocating small slices of traffic or token budgets before scaling system-wide.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0016-canary-tokens.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "operational",
         "deployment",
@@ -263,15 +328,20 @@
     },
     {
       "id": "0015-rollback-ledger",
-      "title": "Rollback Ledger",
+      "title": "0015-rollback-ledger",
       "section": "operational",
       "description": "Make every launch reversible. Nothing enters production unless it can also be rolled back cleanly.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0015-rollback-ledger.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "operational",
         "deployment",
@@ -283,15 +353,20 @@
     },
     {
       "id": "0014-agentic-redux",
-      "title": "Agentic Redux",
+      "title": "0014-agentic-redux",
       "section": "architecture",
       "description": "Apply Redux-style discipline to AI systems. Agents propose state updates, reducers validate and apply them, and the canonical store remains compact, deterministic, and auditable.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0014-agentic-redux.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "architecture",
         "state-management",
@@ -303,15 +378,20 @@
     },
     {
       "id": "0013-fallback-chain",
-      "title": "Fallback Chain",
+      "title": "0013-fallback-chain",
       "section": "architecture",
       "description": "Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0013-fallback-chain.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "architecture",
         "resilience",
@@ -323,15 +403,20 @@
     },
     {
       "id": "0012-sandbox-first",
-      "title": "Sandbox-First",
+      "title": "0012-sandbox-first",
       "section": "architecture",
       "description": "Run risky or untrusted actions in isolation before touching production. Dry-runs and mocks protect systems from catastrophic errors.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0012-sandbox-first.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "architecture",
         "safety",
@@ -343,15 +428,20 @@
     },
     {
       "id": "0011-tool-adapter",
-      "title": "Tool Adapter",
+      "title": "0011-tool-adapter",
       "section": "architecture",
       "description": "Wrap volatile or risky tools in strict contracts. Adapters validate, retry, and log so agents only see safe, stable interfaces.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0011-tool-adapter.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "architecture",
         "adapter-pattern",
@@ -363,15 +453,20 @@
     },
     {
       "id": "0010-acv",
-      "title": "ACV (Agent / Controller / View)",
+      "title": "0010-acv",
       "section": "architecture",
       "description": "Separate reasoning, orchestration, and presentation to avoid brittle, tangled systems. Agents propose, controllers execute, views render.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0010-acv.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "architecture",
         "separation-of-concerns",
@@ -383,15 +478,20 @@
     },
     {
       "id": "0009-lazy-consensus",
-      "title": "Lazy Consensus",
+      "title": "0009-lazy-consensus",
       "section": "governance",
       "description": "Default to progress unless there is strong, constructive objection. Silence means consent; objections must come with a counter-path.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0009-lazy-consensus.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "governance",
         "consensus",
@@ -403,7 +503,7 @@
     },
     {
       "id": "0008-decision-ledger",
-      "title": "Decision Ledger",
+      "title": "0008-decision-ledger",
       "section": "governance",
       "description": "Preserve the rationale behind decisions so they aren't forgotten or relitigated. A simple log of decisions, dates, and rationale saves teams from repeating old debates.",
       "hasExample": true,
@@ -417,10 +517,15 @@
         "example/src/index.ts",
         "example/src/types.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0008-decision-ledger.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "governance",
         "decision-making",
@@ -432,15 +537,20 @@
     },
     {
       "id": "0007-eval-as-contract",
-      "title": "Eval as Contract",
+      "title": "0007-eval-as-contract",
       "section": "governance",
       "description": "Define evaluation criteria up front so merges are based on evidence, not persuasion. Metrics agreed before work begins prevent shifting goalposts.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0007-eval-as-contract.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "governance",
         "evaluation",
@@ -452,15 +562,20 @@
     },
     {
       "id": "0006-track-path-governance",
-      "title": "Track–Path Governance",
+      "title": "0006-track-path-governance",
       "section": "governance",
       "description": "Replace personality-driven debates with structured exploration. Work is organized into tracks (shared goals) and paths (alternative approaches). Evidence determines which path merges back, not ego.",
-      "hasExample": false,
+      "hasExample": true,
       "exampleFiles": [
-        "README.md"
+        "README.md",
+        "package.json",
+        "src/0006-track-path-governance.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "governance",
         "team-dynamics",
@@ -472,7 +587,7 @@
     },
     {
       "id": "0005-pathscore",
-      "title": "PathScore",
+      "title": "0005-pathscore",
       "section": "generation",
       "description": "A single-number evaluation metric for comparing paths before merging. Balances value (impact) against cost (tokens, time, eval bill).",
       "hasExample": true,
@@ -485,10 +600,15 @@
         "example/src/pathscore.ts",
         "example/src/types.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0005-pathscore.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "generation",
         "evaluation",
@@ -500,7 +620,7 @@
     },
     {
       "id": "0004-streaming-first",
-      "title": "Streaming First",
+      "title": "0004-streaming-first",
       "section": "generation",
       "description": "Prefer incremental output over monoliths. Improves UX, reduces perceived latency, and creates more responsive systems.",
       "hasExample": true,
@@ -515,10 +635,15 @@
         "example/src/streaming-generator.ts",
         "example/src/types.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0004-streaming-first.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "generation",
         "user-experience",
@@ -530,7 +655,7 @@
     },
     {
       "id": "0003-structured-memory",
-      "title": "Structured Memory",
+      "title": "0003-structured-memory",
       "section": "generation",
       "description": "Separate short-term context from long-term knowledge. Prevent prompt bloat and improve reliability by treating memory as tiers.",
       "hasExample": true,
@@ -544,10 +669,15 @@
         "example/src/memory-manager.ts",
         "example/src/types.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0003-structured-memory.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "generation",
         "memory-management",
@@ -559,7 +689,7 @@
     },
     {
       "id": "0002-context-ledger",
-      "title": "Context Ledger",
+      "title": "0002-context-ledger",
       "section": "generation",
       "description": "Make prompt assembly explicit and auditable. Log what went in and what came out so every generation can be replayed.",
       "hasExample": true,
@@ -575,10 +705,15 @@
         "example/src/ledger.ts",
         "example/src/types.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0002-context-ledger.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "generation",
         "debugging",
@@ -590,7 +725,7 @@
     },
     {
       "id": "0001-deterministic-io",
-      "title": "Deterministic IO",
+      "title": "0001-deterministic-io",
       "section": "generation",
       "description": "Schema-first prompting. Define contracts for every output so results are testable, reproducible, and debuggable.",
       "hasExample": true,
@@ -604,10 +739,15 @@
         "example/src/index.ts",
         "example/src/schemas.ts",
         "example/tsconfig.json",
-        "user-story.md"
+        "package.json",
+        "src/0001-deterministic-io.test.ts",
+        "src/index.ts",
+        "tsconfig.json",
+        "user-story.md",
+        "vitest.config.ts"
       ],
-      "author": "AI Design Patterns Team",
-      "createdAt": "2024-08-30",
+      "author": "flyman",
+      "createdAt": "2025-08-31",
       "tags": [
         "generation",
         "schemas",
@@ -1085,9 +1225,9 @@
   "metadata": {
     "totalPatterns": 28,
     "totalSections": 6,
-    "patternsWithExamples": 6,
+    "patternsWithExamples": 28,
     "totalTags": 106,
-    "lastUpdated": "2025-08-30",
+    "lastUpdated": "2025-08-31",
     "version": "1.0.0"
   }
 }
