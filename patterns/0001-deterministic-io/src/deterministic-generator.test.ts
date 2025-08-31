@@ -1,7 +1,24 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { DeterministicGenerator } from './deterministic-generator.js';
-import { TaskAnalysisSchema, SentimentAnalysisSchema } from './schemas.js';
 import { z } from 'zod';
+
+export const TaskAnalysisSchema = z.object({
+  priority: z.enum(['low', 'medium', 'high', 'urgent']),
+  estimatedHours: z.number().min(0.5).max(80),
+  category: z.string().min(1),
+  dependencies: z.array(z.string()),
+  riskLevel: z.number().min(1).max(5)
+});
+
+// Schema for a sentiment analysis
+export const SentimentAnalysisSchema = z.object({
+  sentiment: z.enum(['positive', 'negative', 'neutral']),
+  confidence: z.number().min(0).max(1),
+  keywords: z.array(z.string()),
+  score: z.number().min(-1).max(1)
+});
+
+
 
 describe('DeterministicGenerator', () => {
   let generator: DeterministicGenerator;

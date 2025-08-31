@@ -1,4 +1,4 @@
-import type { PathCandidate, BaselineMetrics, PathScoreResult } from './types.js';
+import type { PathCandidate, BaselineMetrics, PathScoreResult } from './types';
 
 export interface PathScoreConfig {
   baseline: BaselineMetrics;

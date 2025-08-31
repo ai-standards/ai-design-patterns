@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { PathScorer } from './pathscore.js';
-import type { PathCandidate, PathScoreConfig } from './pathscore.js';
+import { PathScorer, PathScoreConfig } from './pathscore';
+import type { PathCandidate} from './types';
 
 describe('PathScorer', () => {
   let scorer: PathScorer;
