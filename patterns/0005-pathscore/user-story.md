@@ -1,6 +1,4 @@
-# User Story: PathScore at CodeReview AI
-
-## The Challenge
+# PathScore at CodeReview AI
 
 **Company**: CodeReview AI - An AI-powered code review platform for enterprise development teams
 **Team**: 15 engineers, 4 ML engineers, 2 DevOps engineers
