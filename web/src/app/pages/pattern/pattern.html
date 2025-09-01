@@ -1,17 +1,17 @@
 <app-layout>
   @if (pattern(); as p) {
     <div class="page-wrapper">
-  
-      <div class="page">
-        <markdown 
-          [src]="'https://raw.githubusercontent.com/ai-standards/ai-design-patterns/refs/heads/main/patterns/' + p.id + '/README.md'"
-        ></markdown> 
-      </div>
-      <div class="sidebar">
+      <section class="title">
+        <p class="subtitle">Created by {{p.author}} @ {{p.createdAt}}</p>
+        <markdown [data]="title()"></markdown>
+      </section>
+
+
+      <header>
         <mat-card>
           <mat-card-header>
             <mat-card-title>{{p.title}} <small>{{p.section}}</small></mat-card-title>
-            <mat-card-subtitle>Created by {{p.author}} @ {{p.createdAt}}</mat-card-subtitle>
+            <mat-card-subtitle></mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
             <p>{{p.description}}</p>
@@ -24,18 +24,23 @@
             </div>
           </mat-card-actions>
         </mat-card>
+      </header>
 
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>User Story</mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-              <markdown [data]="userStoryPreview()"></markdown> 
-          </mat-card-content>
-          <mat-card-actions>
-            <button [routerLink]="['/patterns', p.section, p.id, 'story']" mat-flat-button>Read More</button>
-          </mat-card-actions>
-        </mat-card>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>User Story</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <markdown [data]="userStoryPreview()"></markdown> 
+            </mat-card-content>
+            <mat-card-actions>
+              <button [routerLink]="['/patterns', p.section, p.id, 'story']" mat-flat-button>Read More</button>
+            </mat-card-actions>
+          </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
 
         <mat-card>
           <mat-card-header>
@@ -63,6 +68,19 @@
             <button [routerLink]="['/patterns', p.section, p.id, 'example']" mat-flat-button>View Code</button>
           </mat-card-actions>
         </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+  
+      <div class="page">
+        <markdown 
+          [src]="'https://raw.githubusercontent.com/ai-standards/ai-design-patterns/refs/heads/main/patterns/' + p.id + '/README.md'"
+        ></markdown> 
+      </div>
+      <div class="sidebar">
+
+
+
+
       </div>
     </div>
   }

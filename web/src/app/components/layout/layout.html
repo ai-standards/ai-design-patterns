@@ -1,46 +1,42 @@
 <div class="layout">
-  <mat-toolbar>
+  <mat-toolbar class="navbar">
     <button mat-icon-button (click)="toggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="toolbar-title" [style.flex]="1">AI Design Patterns</span>
-    <button mat-flat-button>
-      <mat-icon>add</mat-icon>
-      Create a new design pattern
-    </button>
+    <span class="brand" [style.flex]="1">AI Design Patterns</span>
   </mat-toolbar>
 
   <mat-sidenav-container>
-    <mat-sidenav mode="side" [opened]="sidenavOpen()">
-      <mat-accordion>
-        @for (section of sections(); track section.id) {
-          <mat-expansion-panel class="stacked-header-panel">
-            <mat-expansion-panel-header class="stacked">
-              <mat-panel-title>{{ section.title }}</mat-panel-title>
-              <mat-panel-description>{{ section.blurb }}</mat-panel-description>
-            </mat-expansion-panel-header>
-            
-            <mat-nav-list>
-              @for (pattern of index()[section.id] || []; track pattern.id) {
-                <mat-list-item [activated]="false">
-                  <a matListItemTitle [routerLink]="['/patterns', section.id, pattern.id]">{{ pattern.title }}</a>
-                  <button matIconButton (click)="showInfo(pattern)" matListItemMeta>
-                    <mat-icon>info</mat-icon>
-                  </button>
-                </mat-list-item>
-              }
-            </mat-nav-list>
-          </mat-expansion-panel>
-        }
-      </mat-accordion>
+    <mat-sidenav 
+      mode="side"
+      [opened]="sidenavOpen()" 
+      [fixedInViewport]="true" 
+      [fixedTopGap]="64"
+      [fixedBottomGap]="0">
+        <div class="sidebar">
+          <div class="nav">
+            <app-pattern-tree></app-pattern-tree>
+          </div>
+          <div class="cta">
+            <strong>Discovered a breakthrough pattern in your AI work?</strong>
+            <p>Your insights can set the standard. Contribute your AI pattern and 
+              help build the definitive resource for our field.</p>
+            <button mat-flat-button>
+              <mat-icon>add</mat-icon>
+              Create a new design pattern
+            </button>
+          </div>
+        </div>
     </mat-sidenav>
     
     <mat-sidenav-content>
-      <mat-toolbar>
-        <app-breadcrumbs></app-breadcrumbs>
-        <span [style.flex]="1"></span>
-        <app-page-toolbar></app-page-toolbar>
-      </mat-toolbar>
+      <div class="page-toolbar">
+        <mat-toolbar>
+          <app-breadcrumbs></app-breadcrumbs>
+          <span [style.flex]="1"></span>
+          <app-page-toolbar></app-page-toolbar>
+        </mat-toolbar>
+      </div>
       <div class="content">
         <ng-content></ng-content>
       </div>

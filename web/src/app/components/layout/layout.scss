@@ -1,62 +1,53 @@
 @use '@angular/material' as mat;
 
-// Customize the entire app. Change :root to your selector if you want to scope the styles.
-:root {
+.layout {
+  background: var(--color-root);
   @include mat.toolbar-overrides((
-    container-background-color: #8E24AA,
-    container-text-color: #FAFAFA,
+    container-background-color: var(--color-root),
+    container-text-color: #f5f5f5
   ));
   @include mat.sidenav-overrides((
-    container-background-color: #f5f5f5,
+    container-background-color: var(--color-mid),
+    container-text-color: #fff,
+    content-background-color: var(--color-root),
   ));
 }
-
-mat-sidenav-content{
+.page-toolbar {
+  background: var(--color-mid);
   @include mat.toolbar-overrides((
-    container-background-color: #f5f5f5,
-    container-text-color: #444,
+    container-background-color: var(--color-root),
+    container-text-color: #f5f5f5
   ));
 }
 
-mat-sidenav{
-  background: #f5f5f5;
+.brand{
+  font-weight: 600;
+  font-family: var(--font-headline);
+  font-size: 1.5rem;
+}
+
+.sidebar{
   height: 100%;
-  padding: 1rem;
-  display: block;
-}
+  display: flex;
+  flex-direction: column;
 
-// Stack expansion panel title and description vertically using proper theming
-.stacked-header-panel {
-  
-  .mat-expansion-panel-header {
-    padding: 16px;
-    
-    .mat-expansion-panel-header-title {
-      font-weight: 500;
-      margin-bottom: 4px;
-      width: 100%;
-    }
-    
-    .mat-expansion-panel-header-description {
-      margin: 0;
-      font-size: 0.875rem;
-      color: rgba(0, 0, 0, 0.6);
-      line-height: 1.4;
-      width: 100%;
+  .nav{
+    flex: 1;
+  }
+
+  .cta{
+    padding: 1rem;
+    font-weight: 300;
+    background: var(--color-root);
+    p{
+      opacity: 0.25;
+      font-size: 12px;
     }
   }
-  
-  .mat-expansion-panel-body {
-    padding: 0;
-  }
 }
 
-.stacked{
-  .mat-content{
-    flex-direction: column;
-  }
-}
-
-mat-toolbar{
-  background: #f5f5f5;
+.content{
+  background: #fff;
+  height: 85vh;
+  overflow: auto;
 }

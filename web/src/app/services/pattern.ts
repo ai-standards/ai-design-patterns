@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { firstValueFrom, map, Observable } from 'rxjs';
+import { firstValueFrom, from, map, Observable, switchMap } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { PatternIndex, Pattern } from '../lib/models/pattern';
 
@@ -21,6 +21,31 @@ export class PatternService {
     return firstValueFrom(this.patterns$.pipe(
       map(patterns => patterns?.find(p => p.id === patternId) || undefined)
     ))
+  }
+
+  load(patternId: string): Promise<Pattern | undefined> {
+    return firstValueFrom(this.patterns$.pipe(
+      switchMap(patterns => from(this.content(patternId)).pipe(
+        map(content => {
+          const pattern = patterns?.find(p => p.id === patternId) || undefined;
+          if (! pattern) {
+            throw new Error('Pattern not found: ' + patternId);
+          }
+          return {
+            ...pattern,
+            content
+          }
+        })
+      ))
+    ))
+  }
+
+  content(patternId: string) {
+    return firstValueFrom(
+      this.http.get(`https://raw.githubusercontent.com/ai-standards/ai-design-patterns/refs/heads/main/patterns/${patternId}/README.md`, { 
+        responseType: 'text' 
+      }).pipe(map(res => res.toString()))
+    );
   }
 
   userStory(patternId: string) {

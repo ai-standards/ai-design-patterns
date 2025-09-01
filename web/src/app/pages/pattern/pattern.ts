@@ -10,11 +10,12 @@ import { MatChip } from "@angular/material/chips";
 import { HttpClient } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @Component({
   selector: 'app-pattern',
   standalone: true,
-  imports: [MarkdownComponent, MatCardModule, Layout, MatChip, MatButtonModule, RouterLink, MatIconModule],
+  imports: [MarkdownComponent, MatCardModule, Layout, MatChip, MatButtonModule, RouterLink, MatIconModule, MatGridListModule],
   templateUrl: './pattern.html',
   styleUrl: './pattern.scss'
 })
@@ -23,6 +24,31 @@ export class Pattern implements OnInit, OnDestroy {
   readonly route = inject(ActivatedRoute);
 
   readonly pattern = signal<any>(undefined);
+
+  readonly lines = computed(() => {
+    const pattern = this.pattern();
+    console.log(pattern);
+    if (! pattern) {
+      return [];
+    }
+    return pattern.content.trim().split('\n') as string[];
+  })
+
+  readonly title = computed(() => {
+    const idx = this.lines().findIndex(l => l.startsWith('## '));
+    if (idx === -1) {
+      return '';
+    }
+    return this.lines().slice(0, idx).join('\n');
+  })
+
+  readonly body = computed(() => {
+    const idx = this.lines().findIndex(l => l.startsWith('## '));
+    if (idx === -1) {
+      return '';
+    }
+    return this.lines().slice(idx).join('\n');
+  })
 
   readonly exampleFiles = signal<string[]>([]);
 
@@ -40,7 +66,7 @@ export class Pattern implements OnInit, OnDestroy {
 
   async loadPattern(id: string) {
     // load pattern
-    const pattern = await this.patternService.find(id);
+    const pattern = await this.patternService.load(id);
     this.pattern.set(pattern || undefined);
 
     // load example files

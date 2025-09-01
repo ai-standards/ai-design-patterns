@@ -1,4 +1,3 @@
-
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
@@ -6,39 +5,197 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+/* Grayscale Palette & Purple Accents */
+:root {
+  --color-root: #1B1A28;   /* very dark charcoal with a whisper of purple */
+  --color-mid:  #2B2A37; /* dark plum/charcoal blend (your 75/25 mix) */
+  --color-accent: #441C5C; /* richer violet accent, still muted */
+}
+
+body {
+  background: var(--color-bg-main);
+  color: var(--gray-6);
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gray-6);
+}
+
+/* Muted text */
+.muted, .secondary {
+  color: var(--gray-5);
+}
+
+/* Links & Accents */
+a, .accent {
+  color: var(--accent-purple);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover, .accent:hover {
+  color: var(--accent-purple-light);
+}
+
+/* Buttons */
+.btn, button, .mat-mdc-raised-button.mat-primary {
+  background: var(--accent-purple);
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(124, 58, 237, 0.08);
+  transition: background 0.15s;
+}
+.btn:hover, button:hover, .mat-mdc-raised-button.mat-primary:hover {
+  background: var(--accent-purple-light);
+}
+
+
+
+/* Font Stacks */
+:root {
+  --font-headline: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-code: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+}
+
+
+
+p, ul, ol, pre, blockquote {
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+
+h1, h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.015em;
+}
+h3, h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.012em;
+}
+h5, h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+code, pre, .code {
+  font-size: 0.97em;
+  background: #f5f7fa;
+  color: #2d3748;
+  border-radius: 5px;
+  padding: 0.18em 0.5em;
+}
+
+pre {
+  padding: 1.1em 1.2em;
+  overflow-x: auto;
+  margin-bottom: 1.5em;
+}
+
+
+/* Headline Weights */
+
+/* Modern, airy headlines: larger, lighter (500) */
+h1, h2 {
+  font-family: var(--font-headline);
+  font-weight: 600;
+  font-size: 2.6rem;
+  letter-spacing: -0.01em;
+  color: #181c24;
+}
+h3, h4 {
+  font-family: var(--font-headline);
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  color: #181c24;
+}
+h5, h6 {
+  font-family: var(--font-headline);
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: #181c24;
+}
+
+/* Body Weights */
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+strong, b, th, label, nav, .nav, .sidebar {
+  font-weight: 600;
+}
+
+/* Code Weights */
+code, pre, .code {
+  font-family: var(--font-code);
+  font-weight: 400;
+}
+.code-strong, code.strong, pre.strong {
+  font-weight: 600;
+}
+code, pre, .code {
+  font-family: var(--font-code);
+  font-size: 0.98em;
+  background: #f4f6fa;
+  color: #2d3748;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
 html {
   @include mat.theme((
     color: (
       primary: mat.$magenta-palette,
       tertiary: mat.$violet-palette,
-    ),
-    typography: Roboto,
-    density: 0,
+    )
   ));
 }
 
-body {
-  // Default the application to a light color theme. This can be changed to
-  // `dark` to enable the dark color theme, or to `light dark` to defer to the
-  // user's system settings.
-  color-scheme: light;
-
-  // Set a default background, font and text colors for the application using
-  // Angular Material's system-level CSS variables. Learn more about these
-  // variables at https://material.angular.dev/guide/system-variables
-  background-color: var(--mat-sys-surface);
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
-
-  // Reset the user agent margin.
-  margin: 0;
+/* Override Angular Material CSS variables to use custom fonts */
+:root {
+  --mat-sys-body-medium-font-family: var(--font-body);
+  --mat-sys-body-large-font-family: var(--font-body);
+  --mat-sys-body-small-font-family: var(--font-body);
+  --mat-sys-headline-large-font-family: var(--font-headline);
+  --mat-sys-headline-medium-font-family: var(--font-headline);
+  --mat-sys-headline-small-font-family: var(--font-headline);
+  --mat-sys-title-large-font-family: var(--font-headline);
+  --mat-sys-title-medium-font-family: var(--font-headline);
+  --mat-sys-title-small-font-family: var(--font-headline);
+  --mat-sys-label-large-font-family: var(--font-body);
+  --mat-sys-label-medium-font-family: var(--font-body);
+  --mat-sys-label-small-font-family: var(--font-body);
+  --mat-sys-code-font-family: var(--font-code);
 }
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Remove duplicate body font-family and margin, already set above */
 
 markdown{
+  h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+}
   h1{
     font-size: 2.5rem;
   }

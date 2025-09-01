@@ -3,6 +3,7 @@ export interface Pattern {
   title: string;
   section: string;
   description: string;
+  content?: string;
   hasExample: boolean;
   exampleFiles: string[];
   path: string;
