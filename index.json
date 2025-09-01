@@ -15,7 +15,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "anti-patterns",
         "deployment",
@@ -40,7 +40,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "anti-patterns",
         "team-dynamics",
@@ -65,7 +65,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "anti-patterns",
         "monolithic",
@@ -90,7 +90,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "anti-patterns",
         "transparency",
@@ -115,7 +115,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "automation-strategies",
         "scheduling",
@@ -140,7 +140,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "automation-strategies",
         "routing",
@@ -165,7 +165,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "automation-strategies",
         "separation-of-concerns",
@@ -190,7 +190,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "automation-strategies",
         "human-oversight",
@@ -216,7 +216,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "automation-strategies",
         "autonomy",
@@ -241,7 +241,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "operational",
         "telemetry",
@@ -266,7 +266,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "operational",
         "cost-management",
@@ -291,7 +291,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "operational",
         "testing",
@@ -316,7 +316,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "operational",
         "deployment",
@@ -341,7 +341,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "operational",
         "deployment",
@@ -366,7 +366,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "architecture",
         "state-management",
@@ -391,7 +391,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "architecture",
         "resilience",
@@ -416,7 +416,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "architecture",
         "safety",
@@ -441,7 +441,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "architecture",
         "adapter-pattern",
@@ -466,7 +466,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "architecture",
         "separation-of-concerns",
@@ -491,7 +491,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "governance",
         "consensus",
@@ -525,7 +525,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "governance",
         "decision-making",
@@ -550,7 +550,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "governance",
         "evaluation",
@@ -575,7 +575,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "governance",
         "team-dynamics",
@@ -603,7 +603,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "generation",
         "evaluation",
@@ -638,7 +638,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "generation",
         "user-experience",
@@ -672,7 +672,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "generation",
         "memory-management",
@@ -690,25 +690,20 @@
       "hasExample": true,
       "exampleFiles": [
         "README.md",
-        "example/README.md",
-        "example/package-lock.json",
-        "example/package.json",
-        "example/src/generator.test.ts",
-        "example/src/generator.ts",
-        "example/src/index.ts",
-        "example/src/ledger.test.ts",
-        "example/src/ledger.ts",
-        "example/src/types.ts",
-        "example/tsconfig.json",
         "package.json",
-        "src/0002-context-ledger.test.ts",
+        "src/README.md",
+        "src/generator.test.ts",
+        "src/generator.ts",
         "src/index.ts",
+        "src/ledger.test.ts",
+        "src/ledger.ts",
+        "src/types.ts",
         "tsconfig.json",
         "user-story.md",
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "generation",
         "debugging",
@@ -737,7 +732,7 @@
         "vitest.config.ts"
       ],
       "author": "flyman",
-      "createdAt": "2025-08-31",
+      "createdAt": "2025-09-01",
       "tags": [
         "generation",
         "schemas",
@@ -1217,7 +1212,7 @@
     "totalSections": 6,
     "patternsWithExamples": 28,
     "totalTags": 106,
-    "lastUpdated": "2025-08-31",
+    "lastUpdated": "2025-09-01",
     "version": "1.0.0"
   }
 }
