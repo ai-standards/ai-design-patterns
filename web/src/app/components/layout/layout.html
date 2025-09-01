@@ -14,6 +14,19 @@
       [fixedTopGap]="64"
       [fixedBottomGap]="0">
         <div class="sidebar">
+          <div class="intro">
+            <h3>Welcome to AI Design Patterns</h3>
+            <p>
+              This is a shared library of proven patterns for building with AI. 
+              Each pattern captures real lessons learned — what works, what doesn’t, 
+              and how to design systems you can trust.
+            </p>
+            <p>
+              Sign in to contribute your own patterns, save favorites, 
+              and help shape this resource for the entire community.
+            </p>
+            <button matButton="outlined">Sign in to get started</button>
+          </div>
           <div class="nav">
             <app-pattern-tree></app-pattern-tree>
           </div>
@@ -21,7 +34,7 @@
             <strong>Discovered a breakthrough pattern in your AI work?</strong>
             <p>Your insights can set the standard. Contribute your AI pattern and 
               help build the definitive resource for our field.</p>
-            <button mat-flat-button>
+            <button  matButton="outlined">
               <mat-icon>add</mat-icon>
               Create a new design pattern
             </button>

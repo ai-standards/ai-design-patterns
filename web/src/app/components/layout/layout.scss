@@ -31,14 +31,31 @@
   display: flex;
   flex-direction: column;
 
+  .intro{
+    padding: 1rem;
+    h3{
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #fff;
+      margin: .5rem 0;
+    }
+    p{
+      font-weight: 300;
+      font-size: .9rem;
+      margin: 0 0 .5rem 0;
+    }
+  }
+
   .nav{
     flex: 1;
+    background: var(--color-root);
+    padding: 1rem;
+    overflow-y: auto;
   }
 
   .cta{
     padding: 1rem;
     font-weight: 300;
-    background: var(--color-root);
     p{
       opacity: 0.25;
       font-size: 12px;

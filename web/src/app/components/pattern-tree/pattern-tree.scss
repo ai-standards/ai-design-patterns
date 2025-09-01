@@ -1,0 +1,9 @@
+
+@use '@angular/material' as mat;
+
+:host{
+@include mat.expansion-overrides((
+    container-text-color: #fff,
+    container-background-color: var(--color-mid),
+  ));
+}
