@@ -1,0 +1,961 @@
+{
+  "patterns": [
+    {
+      "name": "Streaming-First",
+      "description": "Prioritize streaming responses to reduce latency and enable progressive UX.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "KISS Agents",
+      "description": "Super simple, purpose-built agents that do one job and retire immediately after execution.",
+      "category": "core",
+      "tags": ["ai", "design-patterns", "core", "agents", "simplicity"]
+    },
+    {
+      "name": "PathScore",
+      "description": "Compare candidate paths with a single metric balancing impact vs. cost.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Prompt Contract",
+      "description": "Stabilize prompts with immutable intent + variables + tests.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Tool Orchestrator",
+      "description": "Centralize tool selection, retries, and backoff across agents.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Plan-Act-Reflect Loop",
+      "description": "Structure agent work into explicit planning, action, and reflection phases.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Retrieval Sandwich",
+      "description": "Wrap generation with pre- and post-retrieval to anchor answers.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Context Budgeting",
+      "description": "Allocate tokens by section and enforce budgets.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Cached Prompting",
+      "description": "Exploit model/server caching to cut cost/latency for repeated scaffolds.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Deterministic Skeletons",
+      "description": "Use strict schemas and deterministic templates to reduce variance.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Guardrail Validator",
+      "description": "Validate outputs for safety, schema, and business rules.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Decomposition Tree",
+      "description": "Break problems into a tree; solve leaves; compose upward.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Self-Check Critique",
+      "description": "Have the model critique and fix its own draft.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Few-Shot Library",
+      "description": "Maintain central tagged examples automatically retrieved per task.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Dataset Diffing",
+      "description": "Track training/eval set changes as diffs.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Canary Evals",
+      "description": "Tiny, always-on evals run on every change.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Shadow Deploy",
+      "description": "Run new versions in parallel without user impact.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Rollback Switch",
+      "description": "Instant revert path for prompts/models/tools.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Prompt Versioning",
+      "description": "Version prompts like code with changelogs and owners.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Spec-First Generation",
+      "description": "Write a spec before code/content; generate to the spec.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Schema-Guided Output",
+      "description": "Constrain model to emit validated JSON structures.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Agent Controller View (ACV)",
+      "description": "MVC for agents: agents=Models, controllers=front controllers, views=renderers.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Multi-Agent Debate",
+      "description": "Use diverse agents to critique and vote.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Cost-Aware Routing",
+      "description": "Route tasks to the cheapest model that meets quality.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Safety Red-Team",
+      "description": "Continuously probe for unsafe/forbidden behaviors.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Observability & Tracing",
+      "description": "Full traces across prompts, tools, and latency/cost.",
+      "category": "core",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "core"
+      ]
+    },
+    {
+      "name": "Horizontal Model Sharding",
+      "description": "Distribute requests across multiple model instances or providers.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Vertical Model Scaling",
+      "description": "Use larger models only when necessary, smaller ones otherwise.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Multi-Tier Serving",
+      "description": "Route traffic based on SLA tiers (free vs. enterprise).",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Batch Inference",
+      "description": "Group requests into batches to reduce cost and increase throughput.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Async Job Queue",
+      "description": "Use background queues for long-running model tasks.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Circuit Breaker",
+      "description": "Fail fast when a model or tool is down to avoid cascading failures.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Latency Budgeting",
+      "description": "Track and enforce latency budgets across chained calls.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Hot/Cold Path Routing",
+      "description": "Send critical tasks to high-reliability models, others to cheap ones.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Retry with Backoff",
+      "description": "Exponential backoff and jitter for failed model/tool calls.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Fallback Models",
+      "description": "Define backup models to handle outages or quality regressions.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Geo-Distributed Inference",
+      "description": "Run models close to users to reduce latency.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Data Locality Routing",
+      "description": "Keep data processing close to where it\u2019s stored to reduce movement.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Progressive Enhancement",
+      "description": "Start with minimal answer, refine if more budget/time available.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Dynamic Context Pruning",
+      "description": "Drop low-value context when tokens exceed budget.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Response Caching",
+      "description": "Cache entire model responses for repeated queries.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Intermediate Cache",
+      "description": "Cache intermediate results in multi-step pipelines.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "A/B Testing Harness",
+      "description": "Continuously test alternative prompts/models in production.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Traffic Mirroring",
+      "description": "Send duplicate requests to new systems for validation.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Blue/Green Deployments",
+      "description": "Swap environments with zero downtime.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Feature Flags for Prompts",
+      "description": "Toggle prompt versions via feature flags.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Token Accounting",
+      "description": "Track token usage per user/team for cost attribution.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Observability Dashboards",
+      "description": "Centralized dashboards for cost, latency, error rates.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Model Cost Simulator",
+      "description": "Simulate costs for different routing strategies.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Elastic Scaling",
+      "description": "Auto-scale serving infrastructure with demand.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Hybrid Cloud Serving",
+      "description": "Mix on-prem, cloud, and edge models based on requirements.",
+      "category": "ops_scaling",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "ops_scaling"
+      ]
+    },
+    {
+      "name": "Schema Validation",
+      "description": "Validate outputs against strict schemas before use.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Adversarial Testing",
+      "description": "Continuously test models with adversarial prompts.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Toxicity Filtering",
+      "description": "Filter outputs for toxic or unsafe content.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Bias Auditing",
+      "description": "Regularly audit outputs for bias across demographics.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Privacy Filtering",
+      "description": "Remove PII or sensitive information before model use.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Content Watermarking",
+      "description": "Embed signals in generated content for provenance.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Human-in-the-Loop Review",
+      "description": "Require human approval for sensitive tasks.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Sandbox Execution",
+      "description": "Run generated code/content in sandboxes for safety.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Red-Team Competitions",
+      "description": "Organize adversarial competitions to find vulnerabilities.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Ethical Checklists",
+      "description": "Use structured checklists for ethical compliance.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Trace Logging",
+      "description": "Log all prompts/outputs for auditability.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Anomaly Detection",
+      "description": "Detect unusual model behavior in production.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Fairness Metrics",
+      "description": "Measure fairness outcomes systematically.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Safety SLAs",
+      "description": "Define SLAs around safety metrics, not just uptime.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Data Provenance Tracking",
+      "description": "Track origins of training and inference data.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Continuous Evals",
+      "description": "Always-on evals across metrics, domains, and safety.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Incident Response Playbooks",
+      "description": "Document playbooks for AI incidents.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Kill Switch",
+      "description": "Global switch to disable unsafe models instantly.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Quarantine Mode",
+      "description": "Restrict outputs/tools if anomalies are detected.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Legal Compliance Checks",
+      "description": "Check for GDPR/CCPA or domain-specific compliance.",
+      "category": "evaluation_safety",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "evaluation_safety"
+      ]
+    },
+    {
+      "name": "Vision-Augmented Prompting",
+      "description": "Combine images with text prompts for richer answers.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Speech-to-Action",
+      "description": "Directly convert speech inputs into structured actions.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Multimodal Fusion",
+      "description": "Blend vision, text, and audio embeddings before reasoning.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Tabular Reasoning",
+      "description": "Special handling of structured tabular data.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "BI Agent",
+      "description": "Specialized agents for querying business intelligence data.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Creative Writing Scaffolds",
+      "description": "Patterns for narrative generation with structure.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Educational Tutor",
+      "description": "Patterns for step-by-step teaching and quizzes.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Medical QA",
+      "description": "Domain-specific QA with strict retrieval + guardrails.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Legal Reasoner",
+      "description": "Structured reasoning patterns for contracts and law.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Financial Analyst",
+      "description": "Patterns for analyzing and summarizing financial data.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Scientific Hypothesis",
+      "description": "Generating hypotheses from research data.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Code Companion",
+      "description": "Pair-programming scaffolds with context.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Debugging Assistant",
+      "description": "Pattern for isolating and solving code issues.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Game Master Agent",
+      "description": "Interactive storytelling/game orchestration.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Multilingual Transfer",
+      "description": "Patterns for cross-lingual translation and reasoning.",
+      "category": "domain_specialized",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "domain_specialized"
+      ]
+    },
+    {
+      "name": "Prompt Soup",
+      "description": "Bloated prompts without structure or focus.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Infinite Chain",
+      "description": "Unbounded loops of agents calling each other.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Model Worship",
+      "description": "Blindly trusting larger models over cheaper ones.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Context Cramming",
+      "description": "Stuffing entire datasets into context windows.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Eval Blindness",
+      "description": "Deploying without evals or canaries.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Overfitting Prompts",
+      "description": "Prompts so specific they fail to generalize.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Copy-Paste Prompting",
+      "description": "Manual reuse of prompts without abstraction.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Undocumented Changes",
+      "description": "Changing prompts/models without versioning.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Latency Roulette",
+      "description": "Ignoring latency budgets across pipelines.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    },
+    {
+      "name": "Shadow Complexity",
+      "description": "Accumulated hidden logic in prompts and glue code.",
+      "category": "anti_patterns",
+      "tags": [
+        "ai",
+        "design-patterns",
+        "anti_patterns"
+      ]
+    }
+  ],
+  "total": 95
+}

@@ -79,7 +79,7 @@ export class Pattern implements OnInit, OnDestroy {
     // load story
     const story = await this.patternService.userStory(id);
     if (story) {
-      const preview = story.split('\n').slice(1, 12).join('\n');
+      const preview = story.split('\n').slice(0, 12).join('\n');
       this.userStoryPreview.set(preview);
     } else {
       this.userStoryPreview.set('')

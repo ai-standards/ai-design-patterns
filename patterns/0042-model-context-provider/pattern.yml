@@ -1,0 +1,14 @@
+id: 0042-model-context-provider
+name: model-context-provider
+description: separates context into composable blocks of intelligence
+category: Operational
+tags: []
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/ts/README.md
+  - examples/py/main.py
+  - examples/py/test_main.py
+  - examples/py/README.md

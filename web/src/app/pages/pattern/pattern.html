@@ -1,37 +1,23 @@
 <app-layout>
   @if (pattern(); as p) {
     <div class="page-wrapper">
-      <section class="title">
-        <p class="subtitle">Created by {{p.author}} @ {{p.createdAt}}</p>
-        <markdown [data]="title()"></markdown>
-      </section>
-
-
       <header>
-        <mat-card>
-          <mat-card-header>
-            <mat-card-title>{{p.title}} <small>{{p.section}}</small></mat-card-title>
-            <mat-card-subtitle></mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content>
-            <p>{{p.description}}</p>
-          </mat-card-content>
-          <mat-card-actions>
-            <div class="tags">
-              @for (tag of p.tags; track tag) {
-                <mat-chip>{{ tag }}</mat-chip>
-              }
-            </div>
-          </mat-card-actions>
-        </mat-card>
+        <p class="subtitle">Created by {{p.author}} @ {{p.createdAt}}</p>
+        <h1>{{p.title}} <small>{{p.section}}</small></h1>
+        <p>{{p.description}}</p>
+        <div class="tags">
+          @for (tag of p.tags; track tag) {
+            <mat-chip>{{ tag }}</mat-chip>
+          }
+        </div>
       </header>
 
-      <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile>
+      <div class="examples">
+        <div class="user-story">
           <mat-card>
-            <mat-card-header>
-              <mat-card-title>User Story</mat-card-title>
-            </mat-card-header>
+          <mat-card-header>
+            <mat-card-title>User Story</mat-card-title>
+          </mat-card-header>
             <mat-card-content>
                 <markdown [data]="userStoryPreview()"></markdown> 
             </mat-card-content>
@@ -39,10 +25,9 @@
               <button [routerLink]="['/patterns', p.section, p.id, 'story']" mat-flat-button>Read More</button>
             </mat-card-actions>
           </mat-card>
-        </mat-grid-tile>
-        <mat-grid-tile>
-
-        <mat-card>
+        </div>
+        <div class="code-example">
+          <mat-card>
           <mat-card-header>
             <mat-card-title>Code Example</mat-card-title>
           </mat-card-header>
@@ -68,8 +53,8 @@
             <button [routerLink]="['/patterns', p.section, p.id, 'example']" mat-flat-button>View Code</button>
           </mat-card-actions>
         </mat-card>
-        </mat-grid-tile>
-      </mat-grid-list>
+        </div>
+      </div>
   
       <div class="page">
         <markdown 
