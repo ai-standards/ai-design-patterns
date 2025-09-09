@@ -1,1208 +1,395 @@
-{
-  "patterns": [
-    {
-      "id": "0028-perma-beta",
-      "title": "0028-perma-beta",
-      "section": "anti-patterns",
-      "description": "Staying in \\",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0028-perma-beta.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "anti-patterns",
-        "deployment",
-        "beta",
-        "stability",
-        "user-experience",
-        "technical-debt"
-      ]
-    },
-    {
-      "id": "0027-infinite-debate",
-      "title": "0027-infinite-debate",
-      "section": "anti-patterns",
-      "description": "Endless arguments that block progress. Without a structure for turning disagreement into paths, teams burn time instead of discovering.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0027-infinite-debate.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "anti-patterns",
-        "team-dynamics",
-        "decision-making",
-        "progress-blocking",
-        "debate",
-        "velocity"
-      ]
-    },
-    {
-      "id": "0026-hero-agent",
-      "title": "0026-hero-agent",
-      "section": "anti-patterns",
-      "description": "The \\",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0026-hero-agent.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "anti-patterns",
-        "monolithic",
-        "scalability",
-        "brittleness",
-        "complexity",
-        "maintainability"
-      ]
-    },
-    {
-      "id": "0025-black-box-opaqueness",
-      "title": "0025-black-box-opaqueness",
-      "section": "anti-patterns",
-      "description": "Treating the model as an unknowable oracle. Fast for demos, but impossible to debug, reproduce, or trust in production.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0025-black-box-opaqueness.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "anti-patterns",
-        "transparency",
-        "debugging",
-        "opacity",
-        "production-issues",
-        "trust"
-      ]
-    },
-    {
-      "id": "0024-batch-and-schedule-windows",
-      "title": "0024-batch-and-schedule-windows",
-      "section": "automation-strategies",
-      "description": "Run automations at the right cadence and time windows to reduce cost, load, and disruption.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0024-batch-and-schedule-windows.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "automation-strategies",
-        "scheduling",
-        "batching",
-        "cost-optimization",
-        "resource-management",
-        "timing"
-      ]
-    },
-    {
-      "id": "0023-skill-router",
-      "title": "0023-skill-router",
-      "section": "automation-strategies",
-      "description": "Route tasks to the best tool or specialist agent via explicit criteria, not guesswork.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0023-skill-router.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "automation-strategies",
-        "routing",
-        "specialization",
-        "task-distribution",
-        "optimization",
-        "load-balancing"
-      ]
-    },
-    {
-      "id": "0022-planner-worker-decomposition",
-      "title": "0022-planner-worker-decomposition",
-      "section": "automation-strategies",
-      "description": "Split problem solving (plans) from action taking (workers) so you can audit intent separately from execution.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0022-planner-worker-decomposition.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "automation-strategies",
-        "separation-of-concerns",
-        "planning",
-        "execution",
-        "auditability",
-        "orchestration"
-      ]
-    },
-    {
-      "id": "0021-approval-gates",
-      "title": "0021-approval-gates",
-      "section": "automation-strategies",
-      "description": "Insert lightweight human checkpoints at high-risk steps, with clear SLAs and fallback behavior.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0021-approval-gates.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "automation-strategies",
-        "human-oversight",
-        "approval-workflow",
-        "risk-management",
-        "sla",
-        "fallbacks"
-      ]
-    },
-    {
-      "id": "0020-autonomy-levels",
-      "title": "0020-autonomy-levels",
-      "section": "automation-strategies",
-      "description": "Define graduated permission tiers for agents, from read-only to fully autonomous, tied to risk and context.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0020-autonomy-levels.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "automation-strategies",
-        "autonomy",
-        "permissions",
-        "risk-management",
-        "graduated-control",
-        "safety"
-      ]
-    },
-    {
-      "id": "0019-telemetry-ledger",
-      "title": "0019-telemetry-ledger",
-      "section": "operational",
-      "description": "Record all inputs, outputs, and metadata so behavior can be debugged, audited, and reproduced.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0019-telemetry-ledger.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "operational",
-        "telemetry",
-        "observability",
-        "debugging",
-        "audit-trail",
-        "monitoring"
-      ]
-    },
-    {
-      "id": "0018-cost-guardrails",
-      "title": "0018-cost-guardrails",
-      "section": "operational",
-      "description": "Prevent runaway token or compute costs by enforcing explicit budgets and thresholds at every layer.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0018-cost-guardrails.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "operational",
-        "cost-management",
-        "budgets",
-        "guardrails",
-        "monitoring",
-        "thresholds"
-      ]
-    },
-    {
-      "id": "0017-shadow-agents",
-      "title": "0017-shadow-agents",
-      "section": "operational",
-      "description": "Test new agents in parallel with production by logging their results invisibly until they are proven.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0017-shadow-agents.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "operational",
-        "testing",
-        "parallel-execution",
-        "validation",
-        "production-testing",
-        "shadow-mode"
-      ]
-    },
-    {
-      "id": "0016-canary-tokens",
-      "title": "0016-canary-tokens",
-      "section": "operational",
-      "description": "Roll out changes gradually by allocating small slices of traffic or token budgets before scaling system-wide.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0016-canary-tokens.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "operational",
-        "deployment",
-        "canary-releases",
-        "gradual-rollout",
-        "risk-mitigation",
-        "monitoring"
-      ]
-    },
-    {
-      "id": "0015-rollback-ledger",
-      "title": "0015-rollback-ledger",
-      "section": "operational",
-      "description": "Make every launch reversible. Nothing enters production unless it can also be rolled back cleanly.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0015-rollback-ledger.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "operational",
-        "deployment",
-        "rollback",
-        "safety",
-        "production",
-        "reversibility"
-      ]
-    },
-    {
-      "id": "0014-agentic-redux",
-      "title": "0014-agentic-redux",
-      "section": "architecture",
-      "description": "Apply Redux-style discipline to AI systems. Agents propose state updates, reducers validate and apply them, and the canonical store remains compact, deterministic, and auditable.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0014-agentic-redux.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "architecture",
-        "state-management",
-        "redux-pattern",
-        "agents",
-        "deterministic",
-        "auditability"
-      ]
-    },
-    {
-      "id": "0013-fallback-chain",
-      "title": "0013-fallback-chain",
-      "section": "architecture",
-      "description": "Define ordered alternatives when actions fail. If the primary path breaks, fallbacks ensure the system still delivers results.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0013-fallback-chain.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "architecture",
-        "resilience",
-        "error-handling",
-        "fallbacks",
-        "reliability",
-        "chain-of-responsibility"
-      ]
-    },
-    {
-      "id": "0012-sandbox-first",
-      "title": "0012-sandbox-first",
-      "section": "architecture",
-      "description": "Run risky or untrusted actions in isolation before touching production. Dry-runs and mocks protect systems from catastrophic errors.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0012-sandbox-first.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "architecture",
-        "safety",
-        "isolation",
-        "testing",
-        "risk-management",
-        "sandbox"
-      ]
-    },
-    {
-      "id": "0011-tool-adapter",
-      "title": "0011-tool-adapter",
-      "section": "architecture",
-      "description": "Wrap volatile or risky tools in strict contracts. Adapters validate, retry, and log so agents only see safe, stable interfaces.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0011-tool-adapter.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "architecture",
-        "adapter-pattern",
-        "safety",
-        "contracts",
-        "error-handling",
-        "reliability"
-      ]
-    },
-    {
-      "id": "0010-acv",
-      "title": "0010-acv",
-      "section": "architecture",
-      "description": "Separate reasoning, orchestration, and presentation to avoid brittle, tangled systems. Agents propose, controllers execute, views render.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0010-acv.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "architecture",
-        "separation-of-concerns",
-        "mvc-pattern",
-        "agents",
-        "orchestration",
-        "modularity"
-      ]
-    },
-    {
-      "id": "0009-lazy-consensus",
-      "title": "0009-lazy-consensus",
-      "section": "governance",
-      "description": "Default to progress unless there is strong, constructive objection. Silence means consent; objections must come with a counter-path.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0009-lazy-consensus.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "governance",
-        "consensus",
-        "decision-making",
-        "progress",
-        "team-dynamics",
-        "velocity"
-      ]
-    },
-    {
-      "id": "0008-decision-ledger",
-      "title": "0008-decision-ledger",
-      "section": "governance",
-      "description": "Preserve the rationale behind decisions so they aren't forgotten or relitigated. A simple log of decisions, dates, and rationale saves teams from repeating old debates.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "example/README.md",
-        "example/package-lock.json",
-        "example/package.json",
-        "example/src/decision-ledger.test.ts",
-        "example/src/decision-ledger.ts",
-        "example/src/index.ts",
-        "example/src/types.ts",
-        "example/tsconfig.json",
-        "package.json",
-        "src/0008-decision-ledger.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "governance",
-        "decision-making",
-        "institutional-memory",
-        "documentation",
-        "knowledge-management",
-        "typescript"
-      ]
-    },
-    {
-      "id": "0007-eval-as-contract",
-      "title": "0007-eval-as-contract",
-      "section": "governance",
-      "description": "Define evaluation criteria up front so merges are based on evidence, not persuasion. Metrics agreed before work begins prevent shifting goalposts.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0007-eval-as-contract.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "governance",
-        "evaluation",
-        "contracts",
-        "metrics",
-        "accountability",
-        "transparency"
-      ]
-    },
-    {
-      "id": "0006-track-path-governance",
-      "title": "0006-track-path-governance",
-      "section": "governance",
-      "description": "Replace personality-driven debates with structured exploration. Work is organized into tracks (shared goals) and paths (alternative approaches). Evidence determines which path merges back, not ego.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/0006-track-path-governance.test.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "governance",
-        "team-dynamics",
-        "decision-making",
-        "collaboration",
-        "evidence-based",
-        "process"
-      ]
-    },
-    {
-      "id": "0005-pathscore",
-      "title": "0005-pathscore",
-      "section": "generation",
-      "description": "A single-number evaluation metric for comparing paths before merging. Balances value (impact) against cost (tokens, time, eval bill).",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/README.md",
-        "src/pathscore.test.ts",
-        "src/pathscore.ts",
-        "src/types.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "generation",
-        "evaluation",
-        "decision-making",
-        "metrics",
-        "deployment",
-        "cost-optimization"
-      ]
-    },
-    {
-      "id": "0004-streaming-first",
-      "title": "0004-streaming-first",
-      "section": "generation",
-      "description": "Prefer incremental output over monoliths. Improves UX, reduces perceived latency, and creates more responsive systems.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/README.md",
-        "src/index.ts",
-        "src/stream-renderer.ts",
-        "src/streaming-generator.test.ts",
-        "src/streaming-generator.ts",
-        "src/types.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "generation",
-        "user-experience",
-        "performance",
-        "streaming",
-        "responsiveness",
-        "async-generators"
-      ]
-    },
-    {
-      "id": "0003-structured-memory",
-      "title": "0003-structured-memory",
-      "section": "generation",
-      "description": "Separate short-term context from long-term knowledge. Prevent prompt bloat and improve reliability by treating memory as tiers.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/README.md",
-        "src/index.ts",
-        "src/memory-manager.test.ts",
-        "src/memory-manager.ts",
-        "src/types.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "generation",
-        "memory-management",
-        "context-optimization",
-        "performance",
-        "scalability",
-        "retrieval"
-      ]
-    },
-    {
-      "id": "0002-context-ledger",
-      "title": "0002-context-ledger",
-      "section": "generation",
-      "description": "Make prompt assembly explicit and auditable. Log what went in and what came out so every generation can be replayed.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package.json",
-        "src/README.md",
-        "src/generator.test.ts",
-        "src/generator.ts",
-        "src/index.ts",
-        "src/ledger.test.ts",
-        "src/ledger.ts",
-        "src/types.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "generation",
-        "debugging",
-        "audit-trail",
-        "reproducibility",
-        "logging",
-        "transparency"
-      ]
-    },
-    {
-      "id": "0001-deterministic-io",
-      "title": "0001-deterministic-io",
-      "section": "generation",
-      "description": "Schema-first prompting. Define contracts for every output so results are testable, reproducible, and debuggable.",
-      "hasExample": true,
-      "exampleFiles": [
-        "README.md",
-        "package-lock.json",
-        "package.json",
-        "src/README.md",
-        "src/deterministic-generator.test.ts",
-        "src/deterministic-generator.ts",
-        "src/index.ts",
-        "tsconfig.json",
-        "user-story.md",
-        "vitest.config.ts"
-      ],
-      "author": "flyman",
-      "createdAt": "2025-09-01",
-      "tags": [
-        "generation",
-        "schemas",
-        "validation",
-        "reliability",
-        "typescript",
-        "zod"
-      ]
-    }
-  ],
-  "sections": [
-    {
-      "id": "generation",
-      "title": "Generation Patterns",
-      "description": "How models produce and manage outputs. Turn raw model completions into reliable, evaluable, and useful building blocks.",
-      "patternCount": 5
-    },
-    {
-      "id": "governance",
-      "title": "Governance Patterns",
-      "description": "How AI teams organize discovery and make decisions. Move forward when there is uncertainty, disagreement, or risk.",
-      "patternCount": 4
-    },
-    {
-      "id": "architecture",
-      "title": "Architecture Patterns",
-      "description": "How AI systems are structured. Organize agents, tools, and views so discovery doesn't collapse into chaos.",
-      "patternCount": 5
-    },
-    {
-      "id": "operational",
-      "title": "Operations Patterns",
-      "description": "How AI systems are launched, monitored, and controlled in production. Run systems safely, reliably, and cost-effectively.",
-      "patternCount": 5
-    },
-    {
-      "id": "automation-strategies",
-      "title": "Automation Strategies",
-      "description": "How agentic systems execute real work under constraints. Let agents act with the right permissions and oversight.",
-      "patternCount": 5
-    },
-    {
-      "id": "anti-patterns",
-      "title": "Anti-Patterns",
-      "description": "The dead ends. Approaches that feel fast or clever at first but collapse under real-world use.",
-      "patternCount": 4
-    }
-  ],
-  "tags": [
-    {
-      "name": "decision-making",
-      "count": 5
-    },
-    {
-      "name": "automation-strategies",
-      "count": 5
-    },
-    {
-      "name": "operational",
-      "count": 5
-    },
-    {
-      "name": "architecture",
-      "count": 5
-    },
-    {
-      "name": "generation",
-      "count": 5
-    },
-    {
-      "name": "anti-patterns",
-      "count": 4
-    },
-    {
-      "name": "deployment",
-      "count": 4
-    },
-    {
-      "name": "safety",
-      "count": 4
-    },
-    {
-      "name": "governance",
-      "count": 4
-    },
-    {
-      "name": "team-dynamics",
-      "count": 3
-    },
-    {
-      "name": "transparency",
-      "count": 3
-    },
-    {
-      "name": "debugging",
-      "count": 3
-    },
-    {
-      "name": "risk-management",
-      "count": 3
-    },
-    {
-      "name": "monitoring",
-      "count": 3
-    },
-    {
-      "name": "reliability",
-      "count": 3
-    },
-    {
-      "name": "user-experience",
-      "count": 2
-    },
-    {
-      "name": "velocity",
-      "count": 2
-    },
-    {
-      "name": "scalability",
-      "count": 2
-    },
-    {
-      "name": "cost-optimization",
-      "count": 2
-    },
-    {
-      "name": "separation-of-concerns",
-      "count": 2
-    },
-    {
-      "name": "auditability",
-      "count": 2
-    },
-    {
-      "name": "orchestration",
-      "count": 2
-    },
-    {
-      "name": "fallbacks",
-      "count": 2
-    },
-    {
-      "name": "audit-trail",
-      "count": 2
-    },
-    {
-      "name": "testing",
-      "count": 2
-    },
-    {
-      "name": "validation",
-      "count": 2
-    },
-    {
-      "name": "agents",
-      "count": 2
-    },
-    {
-      "name": "error-handling",
-      "count": 2
-    },
-    {
-      "name": "contracts",
-      "count": 2
-    },
-    {
-      "name": "typescript",
-      "count": 2
-    },
-    {
-      "name": "evaluation",
-      "count": 2
-    },
-    {
-      "name": "metrics",
-      "count": 2
-    },
-    {
-      "name": "performance",
-      "count": 2
-    },
-    {
-      "name": "beta",
-      "count": 1
-    },
-    {
-      "name": "stability",
-      "count": 1
-    },
-    {
-      "name": "technical-debt",
-      "count": 1
-    },
-    {
-      "name": "progress-blocking",
-      "count": 1
-    },
-    {
-      "name": "debate",
-      "count": 1
-    },
-    {
-      "name": "monolithic",
-      "count": 1
-    },
-    {
-      "name": "brittleness",
-      "count": 1
-    },
-    {
-      "name": "complexity",
-      "count": 1
-    },
-    {
-      "name": "maintainability",
-      "count": 1
-    },
-    {
-      "name": "opacity",
-      "count": 1
-    },
-    {
-      "name": "production-issues",
-      "count": 1
-    },
-    {
-      "name": "trust",
-      "count": 1
-    },
-    {
-      "name": "scheduling",
-      "count": 1
-    },
-    {
-      "name": "batching",
-      "count": 1
-    },
-    {
-      "name": "resource-management",
-      "count": 1
-    },
-    {
-      "name": "timing",
-      "count": 1
-    },
-    {
-      "name": "routing",
-      "count": 1
-    },
-    {
-      "name": "specialization",
-      "count": 1
-    },
-    {
-      "name": "task-distribution",
-      "count": 1
-    },
-    {
-      "name": "optimization",
-      "count": 1
-    },
-    {
-      "name": "load-balancing",
-      "count": 1
-    },
-    {
-      "name": "planning",
-      "count": 1
-    },
-    {
-      "name": "execution",
-      "count": 1
-    },
-    {
-      "name": "human-oversight",
-      "count": 1
-    },
-    {
-      "name": "approval-workflow",
-      "count": 1
-    },
-    {
-      "name": "sla",
-      "count": 1
-    },
-    {
-      "name": "autonomy",
-      "count": 1
-    },
-    {
-      "name": "permissions",
-      "count": 1
-    },
-    {
-      "name": "graduated-control",
-      "count": 1
-    },
-    {
-      "name": "telemetry",
-      "count": 1
-    },
-    {
-      "name": "observability",
-      "count": 1
-    },
-    {
-      "name": "cost-management",
-      "count": 1
-    },
-    {
-      "name": "budgets",
-      "count": 1
-    },
-    {
-      "name": "guardrails",
-      "count": 1
-    },
-    {
-      "name": "thresholds",
-      "count": 1
-    },
-    {
-      "name": "parallel-execution",
-      "count": 1
-    },
-    {
-      "name": "production-testing",
-      "count": 1
-    },
-    {
-      "name": "shadow-mode",
-      "count": 1
-    },
-    {
-      "name": "canary-releases",
-      "count": 1
-    },
-    {
-      "name": "gradual-rollout",
-      "count": 1
-    },
-    {
-      "name": "risk-mitigation",
-      "count": 1
-    },
-    {
-      "name": "rollback",
-      "count": 1
-    },
-    {
-      "name": "production",
-      "count": 1
-    },
-    {
-      "name": "reversibility",
-      "count": 1
-    },
-    {
-      "name": "state-management",
-      "count": 1
-    },
-    {
-      "name": "redux-pattern",
-      "count": 1
-    },
-    {
-      "name": "deterministic",
-      "count": 1
-    },
-    {
-      "name": "resilience",
-      "count": 1
-    },
-    {
-      "name": "chain-of-responsibility",
-      "count": 1
-    },
-    {
-      "name": "isolation",
-      "count": 1
-    },
-    {
-      "name": "sandbox",
-      "count": 1
-    },
-    {
-      "name": "adapter-pattern",
-      "count": 1
-    },
-    {
-      "name": "mvc-pattern",
-      "count": 1
-    },
-    {
-      "name": "modularity",
-      "count": 1
-    },
-    {
-      "name": "consensus",
-      "count": 1
-    },
-    {
-      "name": "progress",
-      "count": 1
-    },
-    {
-      "name": "institutional-memory",
-      "count": 1
-    },
-    {
-      "name": "documentation",
-      "count": 1
-    },
-    {
-      "name": "knowledge-management",
-      "count": 1
-    },
-    {
-      "name": "accountability",
-      "count": 1
-    },
-    {
-      "name": "collaboration",
-      "count": 1
-    },
-    {
-      "name": "evidence-based",
-      "count": 1
-    },
-    {
-      "name": "process",
-      "count": 1
-    },
-    {
-      "name": "streaming",
-      "count": 1
-    },
-    {
-      "name": "responsiveness",
-      "count": 1
-    },
-    {
-      "name": "async-generators",
-      "count": 1
-    },
-    {
-      "name": "memory-management",
-      "count": 1
-    },
-    {
-      "name": "context-optimization",
-      "count": 1
-    },
-    {
-      "name": "retrieval",
-      "count": 1
-    },
-    {
-      "name": "reproducibility",
-      "count": 1
-    },
-    {
-      "name": "logging",
-      "count": 1
-    },
-    {
-      "name": "schemas",
-      "count": 1
-    },
-    {
-      "name": "zod",
-      "count": 1
-    }
-  ],
-  "metadata": {
-    "totalPatterns": 28,
-    "totalSections": 6,
-    "patternsWithExamples": 28,
-    "totalTags": 106,
-    "lastUpdated": "2025-09-01",
-    "version": "1.0.0"
+[
+  {
+    "id": "acv",
+    "title": "ACV (Agent–Controller–View)",
+    "slug": "acv",
+    "section": "Orchestration & Reasoning",
+    "description": "Separates agent planning, execution, and UI into distinct layers for clarity and control."
+  },
+  {
+    "id": "plan-act-reflect",
+    "title": "Plan–Act–Reflect",
+    "slug": "plan-act-reflect",
+    "section": "Orchestration & Reasoning",
+    "description": "Loop of planning tasks, executing with tools, and reflecting on results to improve reliability."
+  },
+  {
+    "id": "react-with-tools",
+    "title": "ReAct with Tools",
+    "slug": "react-with-tools",
+    "section": "Orchestration & Reasoning",
+    "description": "Interleave reasoning steps with explicit tool calls and observable traces."
+  },
+  {
+    "id": "subgoal-checkpoints",
+    "title": "Subgoal Checkpoints",
+    "slug": "subgoal-checkpoints",
+    "section": "Orchestration & Reasoning",
+    "description": "Break tasks into measurable subgoals with acceptance criteria and checkpoints."
+  },
+  {
+    "id": "critic-editor",
+    "title": "Critic–Editor Loop",
+    "slug": "critic-editor",
+    "section": "Orchestration & Reasoning",
+    "description": "One agent drafts, another critiques, and an editor applies fixes iteratively."
+  },
+  {
+    "id": "multi-agent-debate",
+    "title": "Multi-Agent Debate",
+    "slug": "multi-agent-debate",
+    "section": "Orchestration & Reasoning",
+    "description": "Use competing agents to argue solutions and converge on stronger outputs."
+  },
+  {
+    "id": "planner-executor-split",
+    "title": "Planner–Executor Split",
+    "slug": "planner-executor-split",
+    "section": "Orchestration & Reasoning",
+    "description": "Divide responsibilities between planning agents and execution agents for clarity."
+  },
+  {
+    "id": "tool-first-planning",
+    "title": "Tool-First Planning",
+    "slug": "tool-first-planning",
+    "section": "Orchestration & Reasoning",
+    "description": "Prioritize available tools when structuring a plan to avoid unexecutable steps."
+  },
+  {
+    "id": "decomposition-trees",
+    "title": "Decomposition Trees",
+    "slug": "decomposition-trees",
+    "section": "Orchestration & Reasoning",
+    "description": "Organize problems into tree structures where branches represent subtasks."
+  },
+
+  {
+    "id": "agent-factory",
+    "title": "Agent Factory",
+    "slug": "agent-factory",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Pattern for quickly instantiating configured agents from a standard recipe."
+  },
+  {
+    "id": "disposable-agents",
+    "title": "Disposable Agents",
+    "slug": "disposable-agents",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Single-use agents designed to solve a task and be discarded immediately."
+  },
+  {
+    "id": "agent-plugins",
+    "title": "Agent Plugins",
+    "slug": "agent-plugins",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Extend agents with pluggable capabilities that can be added or removed at runtime."
+  },
+  {
+    "id": "agent-traits",
+    "title": "Agent Traits",
+    "slug": "agent-traits",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Compose agent behavior from reusable policy or personality modules."
+  },
+  {
+    "id": "role-swapping-agents",
+    "title": "Role-Swapping Agents",
+    "slug": "role-swapping-agents",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Allow agents to dynamically switch roles depending on task stage."
+  },
+  {
+    "id": "agent-swarms",
+    "title": "Agent Swarms (Hive)",
+    "slug": "agent-swarms",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Coordinate large numbers of lightweight agents working in parallel."
+  },
+  {
+    "id": "hierarchical-supervisor",
+    "title": "Hierarchical Supervisor",
+    "slug": "hierarchical-supervisor",
+    "section": "Agent Lifecycle & Composition",
+    "description": "Supervisory agents manage and delegate work to subordinate agents."
+  },
+
+  {
+    "id": "rag-2",
+    "title": "RAG 2.0",
+    "slug": "rag-2",
+    "section": "Knowledge & Context",
+    "description": "Segment, retrieve, and synthesize context with hybrid retrieval strategies."
+  },
+  {
+    "id": "task-aware-context",
+    "title": "Task-Aware Context Packing",
+    "slug": "task-aware-context",
+    "section": "Knowledge & Context",
+    "description": "Select only relevant context for each task, reducing token waste."
+  },
+  {
+    "id": "memory-triad",
+    "title": "Memory Triad",
+    "slug": "memory-triad",
+    "section": "Knowledge & Context",
+    "description": "Separate agent memory into episodic, semantic, and procedural layers."
+  },
+  {
+    "id": "retrieval-contracts",
+    "title": "Retrieval Contracts",
+    "slug": "retrieval-contracts",
+    "section": "Knowledge & Context",
+    "description": "Formalize what can and must be returned during retrieval."
+  },
+  {
+    "id": "context-contracts",
+    "title": "Context Windows as Contracts",
+    "slug": "context-contracts",
+    "section": "Knowledge & Context",
+    "description": "Treat the context window as a formal contract for what knowledge is included."
+  },
+  {
+    "id": "fact-pinning",
+    "title": "Fact Pinning",
+    "slug": "fact-pinning",
+    "section": "Knowledge & Context",
+    "description": "Guarantee inclusion of critical facts or snippets in prompt context."
+  },
+
+  {
+    "id": "mcp",
+    "title": "MCP (Model Context Protocol)",
+    "slug": "mcp",
+    "section": "Protocols & Interop",
+    "description": "Standard protocol for exchanging context and tool contracts across agents and models."
+  },
+  {
+    "id": "tool-abstraction",
+    "title": "Tool Abstraction Layer",
+    "slug": "tool-abstraction",
+    "section": "Protocols & Interop",
+    "description": "Common layer that normalizes diverse tools into a unified interface."
+  },
+  {
+    "id": "openapi-agents",
+    "title": "OpenAPI-for-Agents",
+    "slug": "openapi-agents",
+    "section": "Protocols & Interop",
+    "description": "Use OpenAPI-style contracts to define agent tool capabilities."
+  },
+  {
+    "id": "multi-agent-bus",
+    "title": "Multi-Agent Messaging Bus",
+    "slug": "multi-agent-bus",
+    "section": "Protocols & Interop",
+    "description": "Standardized channel for structured communication between agents."
+  },
+  {
+    "id": "schema-first-io",
+    "title": "Schema-First IO",
+    "slug": "schema-first-io",
+    "section": "Protocols & Interop",
+    "description": "Require strict input/output schemas with validation and retries."
+  },
+
+  {
+    "id": "guardrail-sandwich",
+    "title": "Guardrail Sandwich",
+    "slug": "guardrail-sandwich",
+    "section": "Safety & Policy",
+    "description": "Apply pre-, mid-, and post-execution checks to enforce safety."
+  },
+  {
+    "id": "least-privilege",
+    "title": "Least-Privilege Tooling",
+    "slug": "least-privilege",
+    "section": "Safety & Policy",
+    "description": "Grant agents only the minimum permissions required for a task."
+  },
+  {
+    "id": "policy-as-prompt",
+    "title": "Policy-as-Prompt",
+    "slug": "policy-as-prompt",
+    "section": "Safety & Policy",
+    "description": "Embed governance policies directly into prompts or system instructions."
+  },
+  {
+    "id": "pii-redaction",
+    "title": "PII Redaction",
+    "slug": "pii-redaction",
+    "section": "Safety & Policy",
+    "description": "Identify and remove sensitive data before processing."
+  },
+  {
+    "id": "risk-scored-escalation",
+    "title": "Risk-Scored Escalation",
+    "slug": "risk-scored-escalation",
+    "section": "Safety & Policy",
+    "description": "Route outputs through human review when risk scores exceed thresholds."
+  },
+
+  {
+    "id": "eval-harness",
+    "title": "Offline Eval Harness",
+    "slug": "eval-harness",
+    "section": "Quality & Evaluation",
+    "description": "Framework for evaluating agent behavior against golden datasets."
+  },
+  {
+    "id": "regression-suites",
+    "title": "Goldens & Regression Suites",
+    "slug": "regression-suites",
+    "section": "Quality & Evaluation",
+    "description": "Collections of reference scenarios to prevent regressions."
+  },
+  {
+    "id": "canary-prompts",
+    "title": "Canary Prompts",
+    "slug": "canary-prompts",
+    "section": "Quality & Evaluation",
+    "description": "Special prompts used to continuously probe system weaknesses."
+  },
+  {
+    "id": "critique-as-data",
+    "title": "Critique-as-Data Loop",
+    "slug": "critique-as-data",
+    "section": "Quality & Evaluation",
+    "description": "Turn agent self-criticism and user feedback into new training data."
+  },
+  {
+    "id": "shadow-rollout",
+    "title": "Shadow / A-B / Gradual Rollout",
+    "slug": "shadow-rollout",
+    "section": "Quality & Evaluation",
+    "description": "Deploy changes in controlled phases to monitor effects safely."
+  },
+
+  {
+    "id": "adaptive-routing",
+    "title": "Adaptive Model/Route Selection",
+    "slug": "adaptive-routing",
+    "section": "Cost/Latency/Reliability",
+    "description": "Route requests to different models or tools based on task complexity."
+  },
+  {
+    "id": "latency-bounded",
+    "title": "Latency-Bounded Execution",
+    "slug": "latency-bounded",
+    "section": "Cost/Latency/Reliability",
+    "description": "Enforce deadlines on agent steps to keep responses timely."
+  },
+  {
+    "id": "cost-aware-planning",
+    "title": "Cost-Aware Planning",
+    "slug": "cost-aware-planning",
+    "section": "Cost/Latency/Reliability",
+    "description": "Incorporate cost estimates into task planning and model selection."
+  },
+  {
+    "id": "response-caching",
+    "title": "Response Caching & Artifact Reuse",
+    "slug": "response-caching",
+    "section": "Cost/Latency/Reliability",
+    "description": "Store results and intermediate artifacts to avoid repeated work."
+  },
+  {
+    "id": "fallbacks",
+    "title": "Circuit Breakers & Fallback Ladders",
+    "slug": "fallbacks",
+    "section": "Cost/Latency/Reliability",
+    "description": "Detect failures and route tasks to backup models or static defaults."
+  },
+  {
+    "id": "degraded-mode",
+    "title": "Degraded-Mode Operation",
+    "slug": "degraded-mode",
+    "section": "Cost/Latency/Reliability",
+    "description": "Gracefully reduce features when resources or tools are unavailable."
+  },
+  {
+    "id": "idempotent-retries",
+    "title": "Idempotent Retries",
+    "slug": "idempotent-retries",
+    "section": "Cost/Latency/Reliability",
+    "description": "Ensure retries don’t duplicate side effects using keys or hashes."
+  },
+
+  {
+    "id": "intent-contract-ui",
+    "title": "Intent → Contract → UI",
+    "slug": "intent-contract-ui",
+    "section": "UX & Product",
+    "description": "Convert user intent into a formal contract that generates UI elements."
+  },
+  {
+    "id": "explainable-trace",
+    "title": "Explainable Trace",
+    "slug": "explainable-trace",
+    "section": "UX & Product",
+    "description": "Show reasoning steps and tool calls to make outputs transparent."
+  },
+  {
+    "id": "confidence-ui",
+    "title": "Confidence-Weighted UI",
+    "slug": "confidence-ui",
+    "section": "UX & Product",
+    "description": "Visualize model confidence and uncertainty in the interface."
+  },
+  {
+    "id": "interactive-correction",
+    "title": "Interactive Correction",
+    "slug": "interactive-correction",
+    "section": "UX & Product",
+    "description": "Allow users to edit or steer outputs in real time."
+  },
+  {
+    "id": "draft-approve",
+    "title": "Draft-then-Approve",
+    "slug": "draft-approve",
+    "section": "UX & Product",
+    "description": "Have the agent draft outputs that require human approval before finalizing."
+  },
+  {
+    "id": "undoable-actions",
+    "title": "Undoable Actions",
+    "slug": "undoable-actions",
+    "section": "UX & Product",
+    "description": "Design agent actions to be reversible by default."
+  },
+
+  {
+    "id": "versioned-prompts",
+    "title": "Versioned Prompts & Agents",
+    "slug": "versioned-prompts",
+    "section": "Ops & Telemetry",
+    "description": "Track and version-control prompts and agent definitions."
+  },
+  {
+    "id": "telemetry-first",
+    "title": "Telemetry-First Agents",
+    "slug": "telemetry-first",
+    "section": "Ops & Telemetry",
+    "description": "Build agents with monitoring and logging as first-class concerns."
+  },
+  {
+    "id": "observability-hooks",
+    "title": "Observability Hooks",
+    "slug": "observability-hooks",
+    "section": "Ops & Telemetry",
+    "description": "Embed hooks for tracing, metrics, and debugging into agent workflows."
+  },
+  {
+    "id": "chaos-testing",
+    "title": "Chaos Testing for Agents",
+    "slug": "chaos-testing",
+    "section": "Ops & Telemetry",
+    "description": "Introduce controlled failures to validate resilience and recovery."
+  },
+  {
+    "id": "prompt-drift",
+    "title": "Prompt Drift Detection",
+    "slug": "prompt-drift",
+    "section": "Ops & Telemetry",
+    "description": "Detect and alert when prompt or behavior diverges from expected baselines."
   }
-}
+]

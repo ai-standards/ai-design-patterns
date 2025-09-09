@@ -5,8 +5,7 @@
   "description": "Build scripts for AI Design Patterns catalog",
   "main": "build-index.js",
   "scripts": {
-    "build": "node build-index.js",
-    "generate": "node generate.js"
+    "build": "npx tsx src/generate-patterns.ts"
   },
   "dependencies": {
     "chalk": "^5.6.0",
@@ -17,5 +16,8 @@
     "js-yaml": "^4.1.0",
     "openai": "^5.17.0",
     "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1"
   }
 }
