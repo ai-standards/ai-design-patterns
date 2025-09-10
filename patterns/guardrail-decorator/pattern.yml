@@ -1,0 +1,16 @@
+id: guardrail-decorator
+title: Guardrail Decorator
+slug: guardrail-decorator
+categories:
+  - adapted
+  - safety
+description: >-
+  Decorator applied to AI: wrap model calls with critics, validators, or
+  retries.
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

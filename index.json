@@ -94,7 +94,8 @@
         "adapted",
         "safety"
       ],
-      "description": "Decorator applied to AI: wrap model calls with critics, validators, or retries."
+      "description": "Decorator applied to AI: wrap model calls with critics, validators, or retries.",
+      "status": "ready"
     },
     {
       "id": "tool-proxy",
