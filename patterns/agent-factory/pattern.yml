@@ -1,0 +1,14 @@
+id: agent-factory
+title: Agent Factory
+slug: agent-factory
+categories:
+  - adapted
+  - lifecycle
+description: 'AI-native version of Factory: quickly instantiates agents from recipes.'
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

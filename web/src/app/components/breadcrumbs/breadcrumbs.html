@@ -1,8 +1,0 @@
-<div class="breadcrumbs">
-    @for(segment of breadcrumbs(); track segment; let last = $last) {
-      <a [routerLink]="segment.path">{{ segment.label }}</a>
-      @if(! last) {
-        <span class="divider">/</span>
-      }
-    }
-  </div>
