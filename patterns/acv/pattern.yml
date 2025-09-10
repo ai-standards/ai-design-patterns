@@ -1,0 +1,14 @@
+id: acv
+title: ACV (Agent–Controller–View)
+slug: acv
+categories:
+  - adapted
+  - orchestration
+description: 'MVC reimagined for AI: separate planning, execution, and UI for clarity.'
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

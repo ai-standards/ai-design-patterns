@@ -1,0 +1,15 @@
+id: plan-act-reflect
+title: Plan–Act–Reflect
+slug: plan-act-reflect
+categories:
+  - orchestration
+description: >-
+  Agents loop through planning, execution, and reflection to improve
+  reliability.
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

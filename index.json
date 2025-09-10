@@ -137,7 +137,8 @@
         "adapted",
         "orchestration"
       ],
-      "description": "MVC reimagined for AI: separate planning, execution, and UI for clarity."
+      "description": "MVC reimagined for AI: separate planning, execution, and UI for clarity.",
+      "status": "ready"
     },
     {
       "id": "plan-act-reflect",
@@ -146,7 +147,8 @@
       "categories": [
         "orchestration"
       ],
-      "description": "Agents loop through planning, execution, and reflection to improve reliability."
+      "description": "Agents loop through planning, execution, and reflection to improve reliability.",
+      "status": "ready"
     },
     {
       "id": "react-with-tools",
