@@ -1,395 +1,397 @@
-[
-  {
-    "id": "acv",
-    "title": "ACV (Agent–Controller–View)",
-    "slug": "acv",
-    "section": "Orchestration & Reasoning",
-    "description": "Separates agent planning, execution, and UI into distinct layers for clarity and control."
-  },
-  {
-    "id": "plan-act-reflect",
-    "title": "Plan–Act–Reflect",
-    "slug": "plan-act-reflect",
-    "section": "Orchestration & Reasoning",
-    "description": "Loop of planning tasks, executing with tools, and reflecting on results to improve reliability."
-  },
-  {
-    "id": "react-with-tools",
-    "title": "ReAct with Tools",
-    "slug": "react-with-tools",
-    "section": "Orchestration & Reasoning",
-    "description": "Interleave reasoning steps with explicit tool calls and observable traces."
-  },
-  {
-    "id": "subgoal-checkpoints",
-    "title": "Subgoal Checkpoints",
-    "slug": "subgoal-checkpoints",
-    "section": "Orchestration & Reasoning",
-    "description": "Break tasks into measurable subgoals with acceptance criteria and checkpoints."
-  },
-  {
-    "id": "critic-editor",
-    "title": "Critic–Editor Loop",
-    "slug": "critic-editor",
-    "section": "Orchestration & Reasoning",
-    "description": "One agent drafts, another critiques, and an editor applies fixes iteratively."
-  },
-  {
-    "id": "multi-agent-debate",
-    "title": "Multi-Agent Debate",
-    "slug": "multi-agent-debate",
-    "section": "Orchestration & Reasoning",
-    "description": "Use competing agents to argue solutions and converge on stronger outputs."
-  },
-  {
-    "id": "planner-executor-split",
-    "title": "Planner–Executor Split",
-    "slug": "planner-executor-split",
-    "section": "Orchestration & Reasoning",
-    "description": "Divide responsibilities between planning agents and execution agents for clarity."
-  },
-  {
-    "id": "tool-first-planning",
-    "title": "Tool-First Planning",
-    "slug": "tool-first-planning",
-    "section": "Orchestration & Reasoning",
-    "description": "Prioritize available tools when structuring a plan to avoid unexecutable steps."
-  },
-  {
-    "id": "decomposition-trees",
-    "title": "Decomposition Trees",
-    "slug": "decomposition-trees",
-    "section": "Orchestration & Reasoning",
-    "description": "Organize problems into tree structures where branches represent subtasks."
-  },
-
-  {
-    "id": "agent-factory",
-    "title": "Agent Factory",
-    "slug": "agent-factory",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Pattern for quickly instantiating configured agents from a standard recipe."
-  },
-  {
-    "id": "disposable-agents",
-    "title": "Disposable Agents",
-    "slug": "disposable-agents",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Single-use agents designed to solve a task and be discarded immediately."
-  },
-  {
-    "id": "agent-plugins",
-    "title": "Agent Plugins",
-    "slug": "agent-plugins",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Extend agents with pluggable capabilities that can be added or removed at runtime."
-  },
-  {
-    "id": "agent-traits",
-    "title": "Agent Traits",
-    "slug": "agent-traits",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Compose agent behavior from reusable policy or personality modules."
-  },
-  {
-    "id": "role-swapping-agents",
-    "title": "Role-Swapping Agents",
-    "slug": "role-swapping-agents",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Allow agents to dynamically switch roles depending on task stage."
-  },
-  {
-    "id": "agent-swarms",
-    "title": "Agent Swarms (Hive)",
-    "slug": "agent-swarms",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Coordinate large numbers of lightweight agents working in parallel."
-  },
-  {
-    "id": "hierarchical-supervisor",
-    "title": "Hierarchical Supervisor",
-    "slug": "hierarchical-supervisor",
-    "section": "Agent Lifecycle & Composition",
-    "description": "Supervisory agents manage and delegate work to subordinate agents."
-  },
-
-  {
-    "id": "rag-2",
-    "title": "RAG 2.0",
-    "slug": "rag-2",
-    "section": "Knowledge & Context",
-    "description": "Segment, retrieve, and synthesize context with hybrid retrieval strategies."
-  },
-  {
-    "id": "task-aware-context",
-    "title": "Task-Aware Context Packing",
-    "slug": "task-aware-context",
-    "section": "Knowledge & Context",
-    "description": "Select only relevant context for each task, reducing token waste."
-  },
-  {
-    "id": "memory-triad",
-    "title": "Memory Triad",
-    "slug": "memory-triad",
-    "section": "Knowledge & Context",
-    "description": "Separate agent memory into episodic, semantic, and procedural layers."
-  },
-  {
-    "id": "retrieval-contracts",
-    "title": "Retrieval Contracts",
-    "slug": "retrieval-contracts",
-    "section": "Knowledge & Context",
-    "description": "Formalize what can and must be returned during retrieval."
-  },
-  {
-    "id": "context-contracts",
-    "title": "Context Windows as Contracts",
-    "slug": "context-contracts",
-    "section": "Knowledge & Context",
-    "description": "Treat the context window as a formal contract for what knowledge is included."
-  },
-  {
-    "id": "fact-pinning",
-    "title": "Fact Pinning",
-    "slug": "fact-pinning",
-    "section": "Knowledge & Context",
-    "description": "Guarantee inclusion of critical facts or snippets in prompt context."
-  },
-
-  {
-    "id": "mcp",
-    "title": "MCP (Model Context Protocol)",
-    "slug": "mcp",
-    "section": "Protocols & Interop",
-    "description": "Standard protocol for exchanging context and tool contracts across agents and models."
-  },
-  {
-    "id": "tool-abstraction",
-    "title": "Tool Abstraction Layer",
-    "slug": "tool-abstraction",
-    "section": "Protocols & Interop",
-    "description": "Common layer that normalizes diverse tools into a unified interface."
-  },
-  {
-    "id": "openapi-agents",
-    "title": "OpenAPI-for-Agents",
-    "slug": "openapi-agents",
-    "section": "Protocols & Interop",
-    "description": "Use OpenAPI-style contracts to define agent tool capabilities."
-  },
-  {
-    "id": "multi-agent-bus",
-    "title": "Multi-Agent Messaging Bus",
-    "slug": "multi-agent-bus",
-    "section": "Protocols & Interop",
-    "description": "Standardized channel for structured communication between agents."
-  },
-  {
-    "id": "schema-first-io",
-    "title": "Schema-First IO",
-    "slug": "schema-first-io",
-    "section": "Protocols & Interop",
-    "description": "Require strict input/output schemas with validation and retries."
-  },
-
-  {
-    "id": "guardrail-sandwich",
-    "title": "Guardrail Sandwich",
-    "slug": "guardrail-sandwich",
-    "section": "Safety & Policy",
-    "description": "Apply pre-, mid-, and post-execution checks to enforce safety."
-  },
-  {
-    "id": "least-privilege",
-    "title": "Least-Privilege Tooling",
-    "slug": "least-privilege",
-    "section": "Safety & Policy",
-    "description": "Grant agents only the minimum permissions required for a task."
-  },
-  {
-    "id": "policy-as-prompt",
-    "title": "Policy-as-Prompt",
-    "slug": "policy-as-prompt",
-    "section": "Safety & Policy",
-    "description": "Embed governance policies directly into prompts or system instructions."
-  },
-  {
-    "id": "pii-redaction",
-    "title": "PII Redaction",
-    "slug": "pii-redaction",
-    "section": "Safety & Policy",
-    "description": "Identify and remove sensitive data before processing."
-  },
-  {
-    "id": "risk-scored-escalation",
-    "title": "Risk-Scored Escalation",
-    "slug": "risk-scored-escalation",
-    "section": "Safety & Policy",
-    "description": "Route outputs through human review when risk scores exceed thresholds."
-  },
-
-  {
-    "id": "eval-harness",
-    "title": "Offline Eval Harness",
-    "slug": "eval-harness",
-    "section": "Quality & Evaluation",
-    "description": "Framework for evaluating agent behavior against golden datasets."
-  },
-  {
-    "id": "regression-suites",
-    "title": "Goldens & Regression Suites",
-    "slug": "regression-suites",
-    "section": "Quality & Evaluation",
-    "description": "Collections of reference scenarios to prevent regressions."
-  },
-  {
-    "id": "canary-prompts",
-    "title": "Canary Prompts",
-    "slug": "canary-prompts",
-    "section": "Quality & Evaluation",
-    "description": "Special prompts used to continuously probe system weaknesses."
-  },
-  {
-    "id": "critique-as-data",
-    "title": "Critique-as-Data Loop",
-    "slug": "critique-as-data",
-    "section": "Quality & Evaluation",
-    "description": "Turn agent self-criticism and user feedback into new training data."
-  },
-  {
-    "id": "shadow-rollout",
-    "title": "Shadow / A-B / Gradual Rollout",
-    "slug": "shadow-rollout",
-    "section": "Quality & Evaluation",
-    "description": "Deploy changes in controlled phases to monitor effects safely."
-  },
-
-  {
-    "id": "adaptive-routing",
-    "title": "Adaptive Model/Route Selection",
-    "slug": "adaptive-routing",
-    "section": "Cost/Latency/Reliability",
-    "description": "Route requests to different models or tools based on task complexity."
-  },
-  {
-    "id": "latency-bounded",
-    "title": "Latency-Bounded Execution",
-    "slug": "latency-bounded",
-    "section": "Cost/Latency/Reliability",
-    "description": "Enforce deadlines on agent steps to keep responses timely."
-  },
-  {
-    "id": "cost-aware-planning",
-    "title": "Cost-Aware Planning",
-    "slug": "cost-aware-planning",
-    "section": "Cost/Latency/Reliability",
-    "description": "Incorporate cost estimates into task planning and model selection."
-  },
-  {
-    "id": "response-caching",
-    "title": "Response Caching & Artifact Reuse",
-    "slug": "response-caching",
-    "section": "Cost/Latency/Reliability",
-    "description": "Store results and intermediate artifacts to avoid repeated work."
-  },
-  {
-    "id": "fallbacks",
-    "title": "Circuit Breakers & Fallback Ladders",
-    "slug": "fallbacks",
-    "section": "Cost/Latency/Reliability",
-    "description": "Detect failures and route tasks to backup models or static defaults."
-  },
-  {
-    "id": "degraded-mode",
-    "title": "Degraded-Mode Operation",
-    "slug": "degraded-mode",
-    "section": "Cost/Latency/Reliability",
-    "description": "Gracefully reduce features when resources or tools are unavailable."
-  },
-  {
-    "id": "idempotent-retries",
-    "title": "Idempotent Retries",
-    "slug": "idempotent-retries",
-    "section": "Cost/Latency/Reliability",
-    "description": "Ensure retries don’t duplicate side effects using keys or hashes."
-  },
-
-  {
-    "id": "intent-contract-ui",
-    "title": "Intent → Contract → UI",
-    "slug": "intent-contract-ui",
-    "section": "UX & Product",
-    "description": "Convert user intent into a formal contract that generates UI elements."
-  },
-  {
-    "id": "explainable-trace",
-    "title": "Explainable Trace",
-    "slug": "explainable-trace",
-    "section": "UX & Product",
-    "description": "Show reasoning steps and tool calls to make outputs transparent."
-  },
-  {
-    "id": "confidence-ui",
-    "title": "Confidence-Weighted UI",
-    "slug": "confidence-ui",
-    "section": "UX & Product",
-    "description": "Visualize model confidence and uncertainty in the interface."
-  },
-  {
-    "id": "interactive-correction",
-    "title": "Interactive Correction",
-    "slug": "interactive-correction",
-    "section": "UX & Product",
-    "description": "Allow users to edit or steer outputs in real time."
-  },
-  {
-    "id": "draft-approve",
-    "title": "Draft-then-Approve",
-    "slug": "draft-approve",
-    "section": "UX & Product",
-    "description": "Have the agent draft outputs that require human approval before finalizing."
-  },
-  {
-    "id": "undoable-actions",
-    "title": "Undoable Actions",
-    "slug": "undoable-actions",
-    "section": "UX & Product",
-    "description": "Design agent actions to be reversible by default."
-  },
-
-  {
-    "id": "versioned-prompts",
-    "title": "Versioned Prompts & Agents",
-    "slug": "versioned-prompts",
-    "section": "Ops & Telemetry",
-    "description": "Track and version-control prompts and agent definitions."
-  },
-  {
-    "id": "telemetry-first",
-    "title": "Telemetry-First Agents",
-    "slug": "telemetry-first",
-    "section": "Ops & Telemetry",
-    "description": "Build agents with monitoring and logging as first-class concerns."
-  },
-  {
-    "id": "observability-hooks",
-    "title": "Observability Hooks",
-    "slug": "observability-hooks",
-    "section": "Ops & Telemetry",
-    "description": "Embed hooks for tracing, metrics, and debugging into agent workflows."
-  },
-  {
-    "id": "chaos-testing",
-    "title": "Chaos Testing for Agents",
-    "slug": "chaos-testing",
-    "section": "Ops & Telemetry",
-    "description": "Introduce controlled failures to validate resilience and recovery."
-  },
-  {
-    "id": "prompt-drift",
-    "title": "Prompt Drift Detection",
-    "slug": "prompt-drift",
-    "section": "Ops & Telemetry",
-    "description": "Detect and alert when prompt or behavior diverges from expected baselines."
-  }
-]
+{
+  "categories": [
+    {
+      "id": "adapted",
+      "title": "Patterns You Already Know… in AI"
+    },
+    {
+      "id": "orchestration",
+      "title": "Orchestration & Reasoning"
+    },
+    {
+      "id": "lifecycle",
+      "title": "Agent Lifecycle & Composition"
+    },
+    {
+      "id": "knowledge",
+      "title": "Knowledge & Context"
+    },
+    {
+      "id": "protocols",
+      "title": "Protocols & Interop"
+    },
+    {
+      "id": "safety",
+      "title": "Safety & Policy"
+    },
+    {
+      "id": "quality",
+      "title": "Quality & Evaluation"
+    },
+    {
+      "id": "cost",
+      "title": "Cost, Latency & Reliability"
+    },
+    {
+      "id": "ux",
+      "title": "UX & Product Integration"
+    },
+    {
+      "id": "ops",
+      "title": "Ops & Telemetry"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "agent-factory",
+      "title": "Agent Factory",
+      "slug": "agent-factory",
+      "categories": [
+        "adapted",
+        "lifecycle"
+      ],
+      "status": "ready",
+      "description": "AI-native version of Factory: quickly instantiates agents from recipes."
+    },
+    {
+      "id": "disposable-agents",
+      "title": "Disposable Agents",
+      "slug": "disposable-agents",
+      "categories": [
+        "adapted",
+        "lifecycle"
+      ],
+      "description": "Single-use scripts designed to be fast to create and discard after execution.",
+      "status": "ready"
+    },
+    {
+      "id": "adaptive-routing",
+      "title": "Adaptive Model Routing",
+      "slug": "adaptive-routing",
+      "categories": [
+        "adapted",
+        "cost"
+      ],
+      "description": "Strategy pattern applied to AI: dynamically choose between models or tools."
+    },
+    {
+      "id": "streaming-callbacks",
+      "title": "Streaming & Callbacks",
+      "slug": "streaming-callbacks",
+      "categories": [
+        "adapted",
+        "ux"
+      ],
+      "description": "Observer applied to LLMs: stream partial outputs and notify clients incrementally."
+    },
+    {
+      "id": "guardrail-decorator",
+      "title": "Guardrail Decorator",
+      "slug": "guardrail-decorator",
+      "categories": [
+        "adapted",
+        "safety"
+      ],
+      "description": "Decorator applied to AI: wrap model calls with critics, validators, or retries."
+    },
+    {
+      "id": "tool-proxy",
+      "title": "Tool Proxy",
+      "slug": "tool-proxy",
+      "categories": [
+        "adapted",
+        "protocols"
+      ],
+      "description": "Proxy applied to AI: safe, controlled access to external tools and APIs."
+    },
+    {
+      "id": "tool-fallbacks",
+      "title": "Tool Fallbacks",
+      "slug": "tool-fallbacks",
+      "categories": [
+        "adapted",
+        "cost"
+      ],
+      "description": "Circuit Breaker applied to AI: detect tool failures and fall back gracefully."
+    },
+    {
+      "id": "acv",
+      "title": "ACV (Agent–Controller–View)",
+      "slug": "acv",
+      "categories": [
+        "adapted",
+        "orchestration"
+      ],
+      "description": "MVC reimagined for AI: separate planning, execution, and UI for clarity."
+    },
+    {
+      "id": "plan-act-reflect",
+      "title": "Plan–Act–Reflect",
+      "slug": "plan-act-reflect",
+      "categories": [
+        "orchestration"
+      ],
+      "description": "Agents loop through planning, execution, and reflection to improve reliability."
+    },
+    {
+      "id": "react-with-tools",
+      "title": "ReAct with Tools",
+      "slug": "react-with-tools",
+      "categories": [
+        "orchestration"
+      ],
+      "description": "Interleave reasoning steps with explicit tool calls and observable traces."
+    },
+    {
+      "id": "subgoal-checkpoints",
+      "title": "Subgoal Checkpoints",
+      "slug": "subgoal-checkpoints",
+      "categories": [
+        "orchestration"
+      ],
+      "description": "Break tasks into measurable subgoals with acceptance criteria."
+    },
+    {
+      "id": "critic-editor",
+      "title": "Critic–Editor Loop",
+      "slug": "critic-editor",
+      "categories": [
+        "orchestration",
+        "quality"
+      ],
+      "description": "Draft, critique, and edit iteratively to boost output quality."
+    },
+    {
+      "id": "multi-agent-debate",
+      "title": "Multi-Agent Debate",
+      "slug": "multi-agent-debate",
+      "categories": [
+        "orchestration"
+      ],
+      "description": "Use multiple agents to argue solutions and converge on consensus."
+    },
+    {
+      "id": "memory-triad",
+      "title": "Memory Triad",
+      "slug": "memory-triad",
+      "categories": [
+        "knowledge"
+      ],
+      "description": "Divide memory into episodic, semantic, and procedural layers."
+    },
+    {
+      "id": "rag-2",
+      "title": "RAG 2.0",
+      "slug": "rag-2",
+      "categories": [
+        "knowledge"
+      ],
+      "description": "Segment, retrieve, and synthesize context using hybrid retrieval."
+    },
+    {
+      "id": "context-contracts",
+      "title": "Context Windows as Contracts",
+      "slug": "context-contracts",
+      "categories": [
+        "knowledge"
+      ],
+      "description": "Treat the context window as a strict contract for what knowledge is included."
+    },
+    {
+      "id": "fact-pinning",
+      "title": "Fact Pinning",
+      "slug": "fact-pinning",
+      "categories": [
+        "knowledge"
+      ],
+      "description": "Guarantee inclusion of critical facts in prompts to prevent omissions."
+    },
+    {
+      "id": "guardrail-sandwich",
+      "title": "Guardrail Sandwich",
+      "slug": "guardrail-sandwich",
+      "categories": [
+        "safety"
+      ],
+      "description": "Apply safety filters before, during, and after execution."
+    },
+    {
+      "id": "policy-as-prompt",
+      "title": "Policy-as-Prompt",
+      "slug": "policy-as-prompt",
+      "categories": [
+        "safety"
+      ],
+      "description": "Embed governance policies directly into prompts or system instructions."
+    },
+    {
+      "id": "risk-escalation",
+      "title": "Risk-Scored Escalation",
+      "slug": "risk-escalation",
+      "categories": [
+        "safety",
+        "ux"
+      ],
+      "description": "Route outputs through human review when risk scores exceed thresholds."
+    },
+    {
+      "id": "mcp",
+      "title": "MCP (Model Context Protocol)",
+      "slug": "mcp",
+      "categories": [
+        "protocols"
+      ],
+      "description": "Standard protocol for exchanging context and tool contracts across agents."
+    },
+    {
+      "id": "multi-agent-bus",
+      "title": "Multi-Agent Messaging Bus",
+      "slug": "multi-agent-bus",
+      "categories": [
+        "protocols"
+      ],
+      "description": "Structured channel for communication between multiple agents."
+    },
+    {
+      "id": "schema-first-io",
+      "title": "Schema-First IO",
+      "slug": "schema-first-io",
+      "categories": [
+        "protocols",
+        "safety"
+      ],
+      "description": "Constrain inputs/outputs to strict schemas with validation and retries."
+    },
+    {
+      "id": "eval-harness",
+      "title": "Offline Eval Harness",
+      "slug": "eval-harness",
+      "categories": [
+        "quality"
+      ],
+      "description": "Framework for evaluating agent behavior against golden datasets."
+    },
+    {
+      "id": "critique-as-data",
+      "title": "Critique-as-Data Loop",
+      "slug": "critique-as-data",
+      "categories": [
+        "quality"
+      ],
+      "description": "Turn critiques and feedback into training/evaluation data."
+    },
+    {
+      "id": "shadow-rollout",
+      "title": "Shadow / A-B / Gradual Rollout",
+      "slug": "shadow-rollout",
+      "categories": [
+        "quality",
+        "ops"
+      ],
+      "description": "Release changes in controlled phases to reduce risk."
+    },
+    {
+      "id": "intent-contract-ui",
+      "title": "Intent → Contract → UI",
+      "slug": "intent-contract-ui",
+      "categories": [
+        "ux"
+      ],
+      "description": "Convert user intent into a contract that generates UI elements."
+    },
+    {
+      "id": "explainable-trace",
+      "title": "Explainable Trace",
+      "slug": "explainable-trace",
+      "categories": [
+        "ux"
+      ],
+      "description": "Expose reasoning steps and tool calls to make outputs transparent."
+    },
+    {
+      "id": "confidence-ui",
+      "title": "Confidence-Weighted UI",
+      "slug": "confidence-ui",
+      "categories": [
+        "ux"
+      ],
+      "description": "Visualize model confidence and uncertainty in the interface."
+    },
+    {
+      "id": "interactive-correction",
+      "title": "Interactive Correction",
+      "slug": "interactive-correction",
+      "categories": [
+        "ux"
+      ],
+      "description": "Allow users to steer or correct outputs in real time."
+    },
+    {
+      "id": "draft-approve",
+      "title": "Draft-then-Approve",
+      "slug": "draft-approve",
+      "categories": [
+        "ux",
+        "safety"
+      ],
+      "description": "Require human approval of drafts before final execution."
+    },
+    {
+      "id": "undoable-actions",
+      "title": "Undoable Actions",
+      "slug": "undoable-actions",
+      "categories": [
+        "ux",
+        "safety"
+      ],
+      "description": "Design agent actions to be reversible by default."
+    },
+    {
+      "id": "versioned-prompts",
+      "title": "Versioned Prompts & Agents",
+      "slug": "versioned-prompts",
+      "categories": [
+        "ops"
+      ],
+      "description": "Track and version-control prompts and agent definitions."
+    },
+    {
+      "id": "telemetry-first",
+      "title": "Telemetry-First Agents",
+      "slug": "telemetry-first",
+      "categories": [
+        "ops"
+      ],
+      "description": "Build agents with monitoring and logging as first-class concerns."
+    },
+    {
+      "id": "observability-hooks",
+      "title": "Observability Hooks",
+      "slug": "observability-hooks",
+      "categories": [
+        "ops"
+      ],
+      "description": "Embed hooks for tracing, metrics, and debugging into workflows."
+    },
+    {
+      "id": "chaos-testing",
+      "title": "Chaos Testing for Agents",
+      "slug": "chaos-testing",
+      "categories": [
+        "ops",
+        "quality"
+      ],
+      "description": "Introduce controlled failures to validate resilience and recovery."
+    },
+    {
+      "id": "prompt-drift",
+      "title": "Prompt Drift Detection",
+      "slug": "prompt-drift",
+      "categories": [
+        "ops",
+        "quality"
+      ],
+      "description": "Detect and alert when prompts or behaviors diverge from baselines."
+    }
+  ]
+}

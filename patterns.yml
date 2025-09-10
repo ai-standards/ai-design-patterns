@@ -1,0 +1,185 @@
+patterns:
+  - id: agent-factory
+    name: "Agent Factory"
+    description: "AI-native version of Factory: quickly instantiates agents from recipes."
+    categories: ["adapted", "lifecycle"]
+  
+  - id: disposable-agents
+    name: "Disposable Agents"
+    description: "Single-use scripts designed to be fast to create and discard after execution."
+    categories: ["adapted", "lifecycle"]
+  
+  - id: adaptive-routing
+    name: "Adaptive Model Routing"
+    description: "Strategy pattern applied to AI: dynamically choose between models or tools."
+    categories: ["adapted", "cost"]
+  
+  - id: streaming-callbacks
+    name: "Streaming & Callbacks"
+    description: "Observer applied to LLMs: stream partial outputs and notify clients incrementally."
+    categories: ["adapted", "ux"]
+  
+  - id: guardrail-decorator
+    name: "Guardrail Decorator"
+    description: "Decorator applied to AI: wrap model calls with critics, validators, or retries."
+    categories: ["adapted", "safety"]
+  
+  - id: tool-proxy
+    name: "Tool Proxy"
+    description: "Proxy applied to AI: safe, controlled access to external tools and APIs."
+    categories: ["adapted", "protocols"]
+  
+  - id: tool-fallbacks
+    name: "Tool Fallbacks"
+    description: "Circuit Breaker applied to AI: detect tool failures and fall back gracefully."
+    categories: ["adapted", "cost"]
+  
+  - id: acv
+    name: "ACV (Agent–Controller–View)"
+    description: "MVC reimagined for AI: separate planning, execution, and UI for clarity."
+    categories: ["adapted", "orchestration"]
+  
+  - id: plan-act-reflect
+    name: "Plan–Act–Reflect"
+    description: "Agents loop through planning, execution, and reflection to improve reliability."
+    categories: ["orchestration"]
+  
+  - id: react-with-tools
+    name: "ReAct with Tools"
+    description: "Interleave reasoning steps with explicit tool calls and observable traces."
+    categories: ["orchestration"]
+  
+  - id: subgoal-checkpoints
+    name: "Subgoal Checkpoints"
+    description: "Break tasks into measurable subgoals with acceptance criteria."
+    categories: ["orchestration"]
+  
+  - id: critic-editor
+    name: "Critic–Editor Loop"
+    description: "Draft, critique, and edit iteratively to boost output quality."
+    categories: ["orchestration", "quality"]
+  
+  - id: multi-agent-debate
+    name: "Multi-Agent Debate"
+    description: "Use multiple agents to argue solutions and converge on consensus."
+    categories: ["orchestration"]
+  
+  - id: memory-triad
+    name: "Memory Triad"
+    description: "Divide memory into episodic, semantic, and procedural layers."
+    categories: ["knowledge"]
+  
+  - id: rag-2
+    name: "RAG 2.0"
+    description: "Segment, retrieve, and synthesize context using hybrid retrieval."
+    categories: ["knowledge"]
+  
+  - id: context-contracts
+    name: "Context Windows as Contracts"
+    description: "Treat the context window as a strict contract for what knowledge is included."
+    categories: ["knowledge"]
+  
+  - id: fact-pinning
+    name: "Fact Pinning"
+    description: "Guarantee inclusion of critical facts in prompts to prevent omissions."
+    categories: ["knowledge"]
+  
+  - id: guardrail-sandwich
+    name: "Guardrail Sandwich"
+    description: "Apply safety filters before, during, and after execution."
+    categories: ["safety"]
+  
+  - id: policy-as-prompt
+    name: "Policy-as-Prompt"
+    description: "Embed governance policies directly into prompts or system instructions."
+    categories: ["safety"]
+  
+  - id: risk-escalation
+    name: "Risk-Scored Escalation"
+    description: "Route outputs through human review when risk scores exceed thresholds."
+    categories: ["safety", "ux"]
+  
+  - id: mcp
+    name: "MCP (Model Context Protocol)"
+    description: "Standard protocol for exchanging context and tool contracts across agents."
+    categories: ["protocols"]
+  
+  - id: multi-agent-bus
+    name: "Multi-Agent Messaging Bus"
+    description: "Structured channel for communication between multiple agents."
+    categories: ["protocols"]
+  
+  - id: schema-first-io
+    name: "Schema-First IO"
+    description: "Constrain inputs/outputs to strict schemas with validation and retries."
+    categories: ["protocols", "safety"]
+  
+  - id: eval-harness
+    name: "Offline Eval Harness"
+    description: "Framework for evaluating agent behavior against golden datasets."
+    categories: ["quality"]
+  
+  - id: critique-as-data
+    name: "Critique-as-Data Loop"
+    description: "Turn critiques and feedback into training/evaluation data."
+    categories: ["quality"]
+  
+  - id: shadow-rollout
+    name: "Shadow / A-B / Gradual Rollout"
+    description: "Release changes in controlled phases to reduce risk."
+    categories: ["quality", "ops"]
+  
+  - id: intent-contract-ui
+    name: "Intent → Contract → UI"
+    description: "Convert user intent into a contract that generates UI elements."
+    categories: ["ux"]
+  
+  - id: explainable-trace
+    name: "Explainable Trace"
+    description: "Expose reasoning steps and tool calls to make outputs transparent."
+    categories: ["ux"]
+  
+  - id: confidence-ui
+    name: "Confidence-Weighted UI"
+    description: "Visualize model confidence and uncertainty in the interface."
+    categories: ["ux"]
+  
+  - id: interactive-correction
+    name: "Interactive Correction"
+    description: "Allow users to steer or correct outputs in real time."
+    categories: ["ux"]
+  
+  - id: draft-approve
+    name: "Draft-then-Approve"
+    description: "Require human approval of drafts before final execution."
+    categories: ["ux", "safety"]
+  
+  - id: undoable-actions
+    name: "Undoable Actions"
+    description: "Design agent actions to be reversible by default."
+    categories: ["ux", "safety"]
+  
+  - id: versioned-prompts
+    name: "Versioned Prompts & Agents"
+    description: "Track and version-control prompts and agent definitions."
+    categories: ["ops"]
+  
+  - id: telemetry-first
+    name: "Telemetry-First Agents"
+    description: "Build agents with monitoring and logging as first-class concerns."
+    categories: ["ops"]
+  
+  - id: observability-hooks
+    name: "Observability Hooks"
+    description: "Embed hooks for tracing, metrics, and debugging into workflows."
+    categories: ["ops"]
+  
+  - id: chaos-testing
+    name: "Chaos Testing for Agents"
+    description: "Introduce controlled failures to validate resilience and recovery."
+    categories: ["ops", "quality"]
+  
+  - id: prompt-drift
+    name: "Prompt Drift Detection"
+    description: "Detect and alert when prompts or behaviors diverge from baselines."
+    categories: ["ops", "quality"]

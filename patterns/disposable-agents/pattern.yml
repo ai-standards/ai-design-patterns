@@ -1,0 +1,14 @@
+id: disposable-agents
+title: Disposable Agents
+slug: disposable-agents
+categories:
+  - adapted
+  - lifecycle
+description: Single-use scripts designed to be fast to create and discard after execution.
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py
