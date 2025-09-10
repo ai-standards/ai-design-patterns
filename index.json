@@ -115,7 +115,8 @@
         "adapted",
         "protocols"
       ],
-      "description": "Proxy applied to AI: safe, controlled access to external tools and APIs."
+      "description": "Proxy applied to AI: safe, controlled access to external tools and APIs.",
+      "status": "ready"
     },
     {
       "id": "tool-fallbacks",
@@ -125,7 +126,8 @@
         "adapted",
         "cost"
       ],
-      "description": "Circuit Breaker applied to AI: detect tool failures and fall back gracefully."
+      "description": "Circuit Breaker applied to AI: detect tool failures and fall back gracefully.",
+      "status": "ready"
     },
     {
       "id": "acv",

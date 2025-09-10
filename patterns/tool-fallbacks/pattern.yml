@@ -1,0 +1,14 @@
+id: tool-fallbacks
+title: Tool Fallbacks
+slug: tool-fallbacks
+categories:
+  - adapted
+  - cost
+description: 'Circuit Breaker applied to AI: detect tool failures and fall back gracefully.'
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

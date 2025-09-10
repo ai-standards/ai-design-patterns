@@ -1,0 +1,14 @@
+id: tool-proxy
+title: Tool Proxy
+slug: tool-proxy
+categories:
+  - adapted
+  - protocols
+description: 'Proxy applied to AI: safe, controlled access to external tools and APIs.'
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py
