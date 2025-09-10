@@ -2,43 +2,53 @@
   "categories": [
     {
       "id": "adapted",
-      "title": "Patterns You Already Know… in AI"
+      "title": "Patterns You Already Know… in AI",
+      "description": "Classic software design patterns reimagined for AI systems, bringing proven architectural concepts to the world of agents and language models."
     },
     {
       "id": "orchestration",
-      "title": "Orchestration & Reasoning"
+      "title": "Orchestration & Reasoning",
+      "description": "Patterns for coordinating AI agents and managing complex reasoning workflows, including planning, execution, and reflection loops."
     },
     {
       "id": "lifecycle",
-      "title": "Agent Lifecycle & Composition"
+      "title": "Agent Lifecycle & Composition",
+      "description": "Patterns for creating, managing, and composing AI agents throughout their lifecycle, from instantiation to disposal."
     },
     {
       "id": "knowledge",
-      "title": "Knowledge & Context"
+      "title": "Knowledge & Context",
+      "description": "Patterns for managing knowledge, context, and memory in AI systems, including retrieval, storage, and context window optimization."
     },
     {
       "id": "protocols",
-      "title": "Protocols & Interop"
+      "title": "Protocols & Interop",
+      "description": "Standardized communication patterns and protocols for AI systems to interact with each other and external services."
     },
     {
       "id": "safety",
-      "title": "Safety & Policy"
+      "title": "Safety & Policy",
+      "description": "Patterns for ensuring AI system safety, implementing governance policies, and managing risk in AI applications."
     },
     {
       "id": "quality",
-      "title": "Quality & Evaluation"
+      "title": "Quality & Evaluation",
+      "description": "Patterns for measuring, testing, and improving the quality of AI system outputs and behaviors."
     },
     {
       "id": "cost",
-      "title": "Cost, Latency & Reliability"
+      "title": "Cost, Latency & Reliability",
+      "description": "Patterns for optimizing AI system performance, managing costs, reducing latency, and ensuring reliable operation."
     },
     {
       "id": "ux",
-      "title": "UX & Product Integration"
+      "title": "UX & Product Integration",
+      "description": "Patterns for creating intuitive user experiences and seamlessly integrating AI capabilities into products and applications."
     },
     {
       "id": "ops",
-      "title": "Ops & Telemetry"
+      "title": "Ops & Telemetry",
+      "description": "Patterns for operating AI systems in production, including monitoring, debugging, and maintaining AI applications at scale."
     }
   ],
   "patterns": [
