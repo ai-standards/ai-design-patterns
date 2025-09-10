@@ -72,7 +72,8 @@
         "adapted",
         "cost"
       ],
-      "description": "Strategy pattern applied to AI: dynamically choose between models or tools."
+      "description": "Strategy pattern applied to AI: dynamically choose between models or tools.",
+      "status": "ready"
     },
     {
       "id": "streaming-callbacks",
@@ -82,7 +83,8 @@
         "adapted",
         "ux"
       ],
-      "description": "Observer applied to LLMs: stream partial outputs and notify clients incrementally."
+      "description": "Observer applied to LLMs: stream partial outputs and notify clients incrementally.",
+      "status": "ready"
     },
     {
       "id": "guardrail-decorator",

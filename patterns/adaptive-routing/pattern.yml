@@ -1,0 +1,14 @@
+id: adaptive-routing
+title: Adaptive Model Routing
+slug: adaptive-routing
+categories:
+  - adapted
+  - cost
+description: 'Strategy pattern applied to AI: dynamically choose between models or tools.'
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py

@@ -1,0 +1,16 @@
+id: streaming-callbacks
+title: Streaming & Callbacks
+slug: streaming-callbacks
+categories:
+  - adapted
+  - ux
+description: >-
+  Observer applied to LLMs: stream partial outputs and notify clients
+  incrementally.
+sourceFiles:
+  - README.md
+  - user-story.md
+  - examples/ts/main.ts
+  - examples/ts/main.test.ts
+  - examples/py/main.py
+  - examples/py/test_main.py
